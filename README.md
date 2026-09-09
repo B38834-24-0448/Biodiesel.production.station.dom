@@ -1432,3 +1432,41 @@ Link: &lt;http://www.gnu.org/licenses/gpl.html&gt;; rel="license"
 <li><a href="https://www.mediawiki.org/"><img srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" src="https://microformats.org/wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://resources.whatwg.org/logo.svg" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Welcome to the WHATWG community</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Maintaining and evolving HTML since 2004</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://html.spec.whatwg.org/multipage/">Read the HTML Living Standard</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://spec.whatwg.org/">See the other Living Standards developed at the WHATWG</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><a href="https://blog.whatwg.org/">Blog</a><a href="https://whatwg.org/faq">FAQ</a><a href="https://github.com/whatwg">GitHub</a><a href="https://whatwg.org/policies">Policies</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://participate.whatwg.org/"><strong>Participate</strong></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://participate.whatwg.org/">Get started with contributing to the WHATWG</a><a href="https://whatwg.org/chat"><strong>Chat</strong>Talk to other members of the WHATWG community</a><a href="https://x.com/WHATWG"><strong>X (Twitter)</strong>Keep track of spec changes and other announcements</a><a href="https://whatwg.org/validator/"><strong>HTML checker</strong>Validate your HTML documents</a>Queries can be directed either as a&nbsp;<a href="https://github.com/whatwg/meta/issues/new">new meta issue</a>&nbsp;or as an email to the&nbsp;<a href="mailto:sg@whatwg.org">Steering Group</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><small>Copyright © WHATWG (Apple, Google, Mozilla, Microsoft). This work is licensed under a&nbsp;<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small></p>
+<!-- /wp:paragraph -->
