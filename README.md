@@ -488,3 +488,947 @@ Use camel-case for variable names and "spaced" names for definitions, algorithms
 ```html
 <p>Let <var>redirectMode</var> be <var>request</var>'s <a for=request>redirect mode</a>.
 ```
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">ค่า rel ที่มีอยู่</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a href="https://microformats.org/wiki/existing-rel-values#mw-head">กระโดดไปที่การนําทาง</a><a href="https://microformats.org/wiki/existing-rel-values#searchInput">กระโดดไปค้นหา</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><br>หน้านี้ประกอบด้วยตารางค่าความสัมพันธ์ HTML ที่ทราบจากข้อกําหนด รูปแบบ ข้อเสนอ การระดมความคิด และไม่สําคัญ&nbsp;<a href="https://microformats.org/wiki/POSH">หรูหรา</a>&nbsp;การใช้งานในป่า นอกจากนี้ ค่าที่ตกหล่นและปฏิเสธจะแสดงไว้ท้ายรายการเพื่อความครอบคลุม</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>การใช้งาน: ดู&nbsp;<a href="https://microformats.org/wiki/rel-faq#How_is_rel_used">'rel' ใช้อย่างไร</a>● ว่าด้วย&nbsp;รายได้, ดู:&nbsp;<a href="https://microformats.org/wiki/rel-faq#Should_rev_even_be_used">ควรใช้ 'rev' ด้วยซ้ํา</a>●</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>หน้านี้ยังเป็นรีจิสทรี rel อย่างเป็นทางการ (<a href="https://html.spec.whatwg.org/multipage/links.html#other-link-types">WHATWG HTML</a>&nbsp;(<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#other-link-types">ลิงค์ต้นฉบับ</a>),&nbsp;<a href="http://www.w3.org/TR/html5/links.html#other-link-types">W3C HTML5</a>) เพิ่มค่า rel ใหม่และที่เสนอในส่วนต่อไปนี้:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#HTML5_link_type_extensions">ส่วนขยายประเภทลิงก์ HTML5</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">เนื้อหา</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#formats">1รูปแบบ</a><!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#notes">1.1หมายเหตุ</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#proposals">2ข้อเสนอ</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#HTML5_link_type_extensions">3ส่วนขยายประเภทลิงก์ HTML5</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#brainstorming">4การระดมความคิด</a><!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#more_brainstorming">4.1ระดมความคิดมากขึ้น</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#POSH_usage">5การใช้งานที่หรูหรา</a><!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#WCLR">5.1WCLR</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#Dublin_Core">6ดับลินคอร์</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#Use_with_HTTP_Link_Header">7ใช้กับส่วนหัวลิงก์ HTTP</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#unspecified">8ไม่ระบุ</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#non_HTML_rel_values">9ค่า rel ที่ไม่ใช่ HTML</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#dropped">10ลดลง</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#dropped_without_prejudice">11หลุดลอยไปโดยไม่มีอคติ</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#rejected">12ถูกปฏิเสธ</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#tools">13เครื่องมือ</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#addtional_external_research">14การวิจัยภายนอกเพิ่มเติม</a><!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#previous_attempts_at_documenting">14.1ความพยายามครั้งก่อนในการจัดทําเอกสาร</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#related">15ที่เกี่ยวข้อง</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values#copyright">16ลิขสิทธิ์</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">รูปแบบ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>ค่า rel เหล่านี้เป็นรูปแบบที่กําหนดจากข้อกําหนดเฉพาะ (HTML 4, ไมโครฟอร์แมต) จึงเป็นเช่นนี้&nbsp;<strong>แนะนําสําหรับการใช้งานทั่วไป</strong>● เรียงตามตัวอักษรตามมูลค่า</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>หมายเหตุ:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>อย่า</strong> เพิ่มค่า rel ที่เสนอสําหรับ HTML5 ที่นี่ เพิ่มลงใน <a href="https://microformats.org/wiki/existing-rel-values#HTML5_link_type_extensions">ส่วนขยายประเภทลิงก์ HTML5</a> ตาราง</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>อย่า</strong> เพิ่มค่า rel ที่คุณพบใน wild ลงในตารางของรูปแบบ rel นี้ แทนที่จะเพิ่มลงในตารางใน <a href="https://microformats.org/wiki/existing-rel-values#POSH_usage">ส่วนหรู</a>●</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>อย่า</strong> เพิ่มค่า rel ที่ไม่ใช่ HTML ที่คุณพบในตารางของรูปแบบ rel นี้ แทนที่จะเพิ่มลงในตารางใน <a href="https://microformats.org/wiki/existing-rel-values#non_HTML_rel_values">ส่วนค่า rel ที่ไม่ใช่ HTML</a>●</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>อย่า</strong> เพิ่มค่า rel จากข้อเสนอหรือร่างที่ล้าสมัย/เหนือกว่า แทนที่จะเพิ่มลงในตารางในส่วน "ดรอป"</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>แหล่งที่มา:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>คําแนะนํา W3C:<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="http://www.w3.org/TR/html401/types.html#h-6.12">HTML 4.01 ส่วนที่ 6.12 ประเภทลิงก์</a> (ประเภทลิงก์ HTML4)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://www.w3.org/TR/grddl/">การรวบรวมคําอธิบายทรัพยากรจากภาษาถิ่นของภาษา</a> (GRDDL)</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/microformats">ไมโครฟอร์แมต</a> ข้อมูลจําเพาะ<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/xfn">เอ็กซ์เอฟเอ็น</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/rel-license">rel-ใบอนุญาต</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/rel-nofollow">rel-nofollow</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>คําหลัก</th><th>ผลต่อ&nbsp;<code>ลิงค์</code></th><th>ผลต่อ&nbsp;<code>ก</code>,&nbsp;<code>พื้นที่</code></th><th>คําอธิบายสั้น ๆ<br>(จากข้อกําหนดที่เกี่ยวข้องหากเป็นไปได้)</th><th>เชื่อมโยงไปยังการกําหนดข้อกําหนด</th></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-acquaintance&amp;action=edit&amp;redlink=1">ความคุ้นเคย</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่แสดงโดยเอกสารปัจจุบันถือว่าบุคคลที่แสดงโดยเอกสารอ้างอิงเป็นคนรู้จัก</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-alternate">สลับกัน</a></td><td>ทรัพยากรภายนอก</td><td>ความสัมพันธ์ภายนอก</td><td>กําหนดเวอร์ชันทดแทนสําหรับเอกสารที่เกิดลิงก์ เมื่อใช้ร่วมกับ&nbsp;<code>แลง</code>&nbsp;แอตทริบิวต์ มันหมายถึงเวอร์ชันแปลของเอกสาร เมื่อใช้ร่วมกับ&nbsp;<code>สื่อ</code>&nbsp;แอตทริบิวต์ หมายถึงเวอร์ชันที่ออกแบบมาสําหรับสื่อ (หรือสื่อ) ที่แตกต่างกัน</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-appendix&amp;action=edit&amp;redlink=1">ภาคผนวก</a></td><td>อนุญาต</td><td>อนุญาต</td><td>หมายถึง เอกสารที่ใช้เป็นภาคผนวกในการรวบรวมเอกสาร</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-bookmark">บุ๊กมาร์ก</a></td><td>ไม่อนุญาต</td><td>อนุญาต</td><td>หมายถึงที่คั่นหนังสือ บุ๊กมาร์กคือลิงก์ไปยังจุดเริ่มต้นที่สําคัญภายในเอกสารขยาย เดอะ&nbsp;<code>ชื่อเรื่อง</code>&nbsp;อาจใช้แอตทริบิวต์เพื่อติดป้ายกํากับบุ๊กมาร์ก โปรดทราบว่าอาจมีการกําหนดบุ๊กมาร์กหลายรายการในแต่ละเอกสาร</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-chapter&amp;action=edit&amp;redlink=1">บท</a></td><td>อนุญาต</td><td>อนุญาต</td><td>หมายถึงเอกสารที่ทําหน้าที่เป็นบทหนึ่งในการรวบรวมเอกสาร</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-child&amp;action=edit&amp;redlink=1">เด็ก</a></td><td>ความสัมพันธ์ภายนอก</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงเป็นลูกของบุคคลที่แสดงโดยเอกสารปัจจุบัน นอกจากนี้ยังอาจบ่งชี้ว่าเอกสารเป้าหมายเป็นลูกที่มีลําดับชั้นหรือเอกสารย่อยของเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a>,&nbsp;<a href="https://www.w3.org/TR/relations.html">ข้อมูลจําเพาะ HTML 4.0</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-colleague&amp;action=edit&amp;redlink=1">เพื่อนร่วมงาน</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงคือเพื่อนร่วมงานของบุคคลที่แสดงโดยเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-contact">ติดต่อ</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่แสดงโดยเอกสารปัจจุบันถือว่าบุคคลที่แสดงโดยเอกสารอ้างอิงเป็นผู้ติดต่อ</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-contents&amp;action=edit&amp;redlink=1">เนื้อหา</a></td><td>อนุญาต</td><td>อนุญาต</td><td>หมายถึง เอกสารที่ทําหน้าที่เป็นสารบัญ ตัวแทนผู้ใช้บางรายยังรองรับคําพ้องความหมาย ToC (จาก "สารบัญ")</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-copyright&amp;action=edit&amp;redlink=1">ลิขสิทธิ์</a></td><td>อนุญาต</td><td>อนุญาต</td><td>หมายถึงคําชี้แจงลิขสิทธิ์สําหรับเอกสารปัจจุบัน</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-co-resident&amp;action=edit&amp;redlink=1">ผู้พักอาศัยร่วม</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงอาศัยอยู่ในที่อยู่อาศัยเดียวกันกับบุคคลที่แสดงในเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-co-worker&amp;action=edit&amp;redlink=1">เพื่อนร่วมงาน</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงคือเพื่อนร่วมงานของบุคคลที่แสดงโดยเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-crush">บดขยี้</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลนี้ถือว่าบุคคลที่ถูกอ้างอิงนั้นเป็นผู้ที่แอบชอบ (คือมีการแอบชอบบุคคลที่ถูกอ้างอิง)</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-date">วันที่</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลนี้ถือว่าบุคคลที่ถูกอ้างอิงเป็นวันที่ (เช่น กําลังออกเดทกับบุคคลที่ถูกอ้างอิง)</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-friend&amp;action=edit&amp;redlink=1">เพื่อน</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่แสดงโดยเอกสารปัจจุบันถือว่าบุคคลที่แสดงโดยเอกสารอ้างอิงเป็นเพื่อน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-glossary&amp;action=edit&amp;redlink=1">อภิธานศัพท์</a></td><td>อนุญาต</td><td>อนุญาต</td><td>หมายถึงเอกสารที่แสดงรายการคําศัพท์และคําจํากัดความที่เกี่ยวข้องกับเอกสารปัจจุบัน</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-help&amp;action=edit&amp;redlink=1">ช่วยเหลือ</a></td><td>อนุญาต</td><td>อนุญาต</td><td>หมายถึงเอกสารที่เสนอความช่วยเหลือ (ข้อมูลเพิ่มเติม ลิงก์ไปยังแหล่งข้อมูลอื่น ฯลฯ)</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-its-rules&amp;action=edit&amp;redlink=1">กฎของมัน</a></td><td>อนุญาต</td><td>ไม่อนุญาต</td><td>หมายถึงเอกสารที่มีกฎ ITS ภายนอก</td><td><a href="http://www.w3.org/TR/its20/#selection-global-html5">ชุดแท็กความเป็นสากล (ITS) เวอร์ชัน 2.0</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-kin&amp;action=edit&amp;redlink=1">ญาติ</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงเป็นส่วนหนึ่งของครอบครัวขยายของบุคคลที่แสดงโดยเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-license">ใบอนุญาต</a></td><td>อนุญาต</td><td>อนุญาต</td><td>... แสดงว่า [เอกสารอ้างอิง] เป็นใบอนุญาตสําหรับหน้าปัจจุบัน</td><td><a href="https://microformats.org/wiki/rel-license">rel-ใบอนุญาต</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-me">ฉัน</a></td><td>ความสัมพันธ์ภายนอก</td><td>ความสัมพันธ์ภายนอก</td><td>เอกสารอ้างอิงแสดงถึงบุคคลเดียวกันกับเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-met">พบกัน</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>คนนี้ได้เจอคนอ้างอิงแล้ว</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-muse">มิวส์</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงเป็นแรงบันดาลใจให้กับบุคคลที่แสดงโดยเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-neighbor&amp;action=edit&amp;redlink=1">เพื่อนบ้าน</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงอาศัยอยู่ใกล้กับบุคคลที่แสดงโดยเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-next">ถัดไป</a></td><td>ความสัมพันธ์ภายนอก</td><td>ความสัมพันธ์ภายนอก</td><td>หมายถึงเอกสารถัดไปในลําดับเชิงเส้นของเอกสาร ตัวแทนผู้ใช้อาจเลือกที่จะโหลดเอกสาร "ถัดไป" ล่วงหน้า เพื่อลดเวลาในการโหลดที่รับรู้</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-nofollow">ไม่ติดตาม</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>แสดงว่าปลายทางของไฮเปอร์ลิงก์นั้น&nbsp;<em>ไม่ควร</em>&nbsp;ได้รับน้ําหนักเพิ่มเติมใด ๆ หรือการจัดอันดับโดยตัวแทนผู้ใช้ซึ่งดําเนินการวิเคราะห์การเชื่อมโยงบนหน้าเว็บ (เช่นเครื่องมือค้นหา)</td><td><a href="https://microformats.org/wiki/rel-nofollow">rel-nofollow</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-parent&amp;action=edit&amp;redlink=1">ผู้ปกครอง</a></td><td>ความสัมพันธ์ภายนอก</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงคือผู้ปกครองของบุคคลที่แสดงโดยเอกสารปัจจุบัน นอกจากนี้ยังอาจบ่งชี้ว่าเอกสารเป้าหมายเป็นพาเรนต์แบบลําดับชั้นหรือคอนเทนเนอร์ของเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a>,&nbsp;<a href="https://www.w3.org/TR/relations.html">ข้อมูลจําเพาะ HTML 4.0</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-prev">ก่อนหน้า</a></td><td>ความสัมพันธ์ภายนอก</td><td>ความสัมพันธ์ภายนอก</td><td>หมายถึงเอกสารก่อนหน้าในชุดเอกสารที่เรียงลําดับ ตัวแทนผู้ใช้บางรายยังรองรับคําพ้องความหมาย "ก่อนหน้า"</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-previous&amp;action=edit&amp;redlink=1">ก่อนหน้า</a></td><td>ความสัมพันธ์ภายนอก</td><td>ความสัมพันธ์ภายนอก</td><td>คําพ้องความหมาย&nbsp;<code>ก่อนหน้า</code></td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-section&amp;action=edit&amp;redlink=1">ส่วน</a></td><td>อนุญาต</td><td>อนุญาต</td><td>หมายถึง เอกสารที่ทําหน้าที่เป็นส่วนหนึ่งในชุดเอกสาร</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-sibling&amp;action=edit&amp;redlink=1">พี่น้อง</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงเป็นพี่น้องของบุคคลที่แสดงโดยเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-spouse&amp;action=edit&amp;redlink=1">คู่สมรส</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลที่อ้างอิงคือคู่สมรสของบุคคลที่แสดงโดยเอกสารปัจจุบัน</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-start&amp;action=edit&amp;redlink=1">เริ่มต้น</a></td><td>อนุญาต</td><td>อนุญาต</td><td>หมายถึงเอกสารฉบับแรกในชุดเอกสาร ลิงก์ประเภทนี้จะบอกเครื่องมือค้นหาว่าเอกสารใดที่ผู้เขียนพิจารณาว่าเป็นจุดเริ่มต้นของคอลเลกชัน</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-stylesheet&amp;action=edit&amp;redlink=1">สไตล์ชีต</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>สไตล์ชีตสําหรับเอกสารปัจจุบัน<br>ใช้กับองค์ประกอบ &lt;link href&gt; ที่มองไม่เห็นซึ่งไม่เหมาะสําหรับความสัมพันธ์ของเนื้อหา ความสัมพันธ์ของเนื้อหาควรให้ผู้ใช้มองเห็นได้ ดังนั้นจึงควรใช้ &lt;a href&gt; เป็นอย่างยิ่ง น่าเสียดายที่การใช้สไตล์ชีตในเนื้อหาที่ผู้ใช้มองเห็นได้ เช่น &lt;a href&gt; ดูเหมือนจะเป็นไปตามทฤษฎีอย่างเคร่งครัด</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-subsection&amp;action=edit&amp;redlink=1">ส่วนย่อย</a></td><td>อนุญาต</td><td>อนุญาต</td><td>หมายถึงเอกสารที่ทําหน้าที่เป็นส่วนย่อยในการรวบรวมเอกสาร</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-sweetheart">หวานใจ</a></td><td>ไม่อนุญาต</td><td>ความสัมพันธ์ภายนอก</td><td>บุคคลนี้ถือว่าบุคคลที่ถูกอ้างอิงเป็นคู่รักของพวกเขา</td><td><a href="https://microformats.org/wiki/XFN">เอ็กซ์เอฟเอ็น</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-tag">แท็ก</a></td><td>ไม่อนุญาต</td><td>อนุญาต</td><td>... บ่งชี้ว่า [เอกสารอ้างอิง] เป็น "แท็ก" ที่ผู้เขียนกําหนด (หรือคําหลัก/หัวเรื่อง) สําหรับหน้าปัจจุบัน</td><td><a href="https://microformats.org/wiki/rel-tag">rel-แท็ก</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-toc&amp;action=edit&amp;redlink=1">ต๊อก</a></td><td>อนุญาต</td><td>อนุญาต</td><td>คําพ้องความหมาย&nbsp;<code>เนื้อหา</code>&nbsp;(จาก "สารบัญ")</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">ประเภทลิงก์ HTML4</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-transformation&amp;action=edit&amp;redlink=1">การแปลง</a></td><td>อนุญาต</td><td>อนุญาต</td><td>เชื่อมโยงเอกสารต้นฉบับกับการแปลง ซึ่งโดยปกติจะแสดงเป็น XSLT ที่เกี่ยวข้องกับไวยากรณ์เอกสารต้นฉบับกับไวยากรณ์กราฟ RDF ใช้ใน&nbsp;<a href="https://microformats.org/wiki/grddl">GRDDL</a></td><td><a href="http://www.w3.org/TR/grddl/#transformation">GRDDL</a></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">หมายเหตุ</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><code>rel="สํารอง"</code> สามารถใช้ความหมายเพิ่มเติมจากแอตทริบิวต์เพิ่มเติมได้ เช่น<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><code>rel="ทางเลือก" lang="fr"</code> (หน้านี้เวอร์ชั่นภาษาฝรั่งเศส)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><code>rel="สื่อสํารอง"="สิ่งพิมพ์"</code> (เวอร์ชันที่พิมพ์ได้ของหน้านี้)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><code>rel="สื่อสํารอง"="มือถือ"</code> (เวอร์ชันของหน้าที่ตั้งใจหรือดีกว่าสําหรับอุปกรณ์พกพา/พกพา เช่น PDA โทรศัพท์มือถือ ฯลฯ)</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>คําพ้องความหมายเช่น "ก่อนหน้า", "toc" ไม่ได้รับการสนับสนุนอย่างกว้างขวางเท่ากับคําหลัก</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">ข้อเสนอ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>ค่า rel บางส่วนได้รับการพัฒนาเป็นร่างอันเป็นผลมาจากการผ่านไมโครฟอร์แมตส่วนใหญ่&nbsp;<a href="https://microformats.org/wiki/process">กระบวนการ</a>, และด้วยเหตุนี้จึงระบุไว้ที่นี่เพื่อการพิจารณาอย่างจริงจังของคุณ คุณ&nbsp;<strong>อาจจะใช้ค่าเหล่านี้</strong>, และถ้าคุณพบปัญหาใด ๆ กับพวกเขาโปรดชี้ให้เห็นในหน้า "ปัญหา" ที่เกี่ยวข้องสําหรับค่า rel</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ค่าความสัมพันธ์</th><th>สรุป</th><th>เสนอใน</th><th>สเปคภายนอก (ถ้ามี)</th></tr><tr><td><a href="https://microformats.org/wiki/rel-pronunciation">การออกเสียง</a></td><td>... บ่งชี้ว่าปลายทางขององค์ประกอบ 'เชื่อมโยง' เป็นเอกสารที่ให้พจนานุกรมการออกเสียงสําหรับวัตถุประสงค์ในการสังเคราะห์เสียงพูด</td><td><a href="https://microformats.org/wiki/rel-pronunciation">การออกเสียง rel</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-directory">ไดเรกทอรี</a></td><td>... บ่งชี้ว่าปลายทางของไฮเปอร์ลิงก์เป็นรายการไดเรกทอรีที่มีรายการสําหรับหน้าปัจจุบัน</td><td><a href="https://microformats.org/wiki/rel-directory">ไดเร็กทอรี rel</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-enclosure">สิ่งที่แนบมา</a></td><td>... บ่งชี้ว่าปลายทางของไฮเปอร์ลิงก์นั้นมีวัตถุประสงค์เพื่อดาวน์โหลดและแคช</td><td><a href="https://microformats.org/wiki/rel-enclosure">rel-สิ่งที่แนบมา</a></td><td><a href="http://www.apps.ietf.org/rfc/rfc4287.html">อาร์เอฟซี4287</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-home">บ้าน</a></td><td>... บ่งชี้ว่า [เอกสารอ้างอิง] เป็นหน้าแรกของไซต์ที่หน้าปัจจุบันปรากฏขึ้น</td><td><a href="https://microformats.org/wiki/rel-home">rel-บ้าน</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-payment">การชําระเงิน</a></td><td>... บ่งชี้ว่าปลายทางของไฮเปอร์ลิงก์มีวิธีการแสดงหรือให้การสนับสนุน (เช่น การเงิน) สําหรับหน้าปัจจุบัน</td><td><a href="https://microformats.org/wiki/rel-payment">การชําระเงินซ้ํา</a></td></tr><tr><td>วีซีเอส-*</td><td>... บ่งชี้ว่าปลายทางของไฮเปอร์ลิงก์คือตําแหน่งของที่เก็บ Version Control System ที่เกี่ยวข้องกับหน้านั้น</td><td></td><td><a href="https://joeyh.name/rfc/rel-vcs/">rel=vcs-*</a></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">ส่วนขยายประเภทลิงก์ HTML5</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>ค่าต่อไปนี้ได้รับการลงทะเบียนเป็นส่วนขยายประเภทลิงก์ตาม&nbsp;<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#other-link-types">ข้อกําหนดในข้อกําหนด HTML WHATWG</a>&nbsp;และ&nbsp;<a href="http://www.w3.org/TR/html5/links.html#other-link-types">ข้อกําหนดในข้อกําหนด W3C HTML5</a>●</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><br>ก่อนที่คุณจะลงทะเบียนค่าใหม่:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>กรุณาตรวจสอบ <a href="https://microformats.org/wiki/existing-rel-values#formats">ตารางรูปแบบ</a> และอย่าลงทะเบียนใหม่</strong> ค่า REL ที่มีอยู่แล้ว โปรดทราบว่า W3C HTML WG ได้สร้าง <a href="http://lists.w3.org/Archives/Public/public-html/2011Feb/att-0481/issue-118-decision.html">การตัดสินใจ</a> ที่จะลดลง <code>ดัชนี</code>, <code>ขึ้น</code>, <code>ก่อน</code> และ <code>สุดท้าย</code> จากสเปค HTML5 นั้นเอง</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>กรุณาตรวจสอบ <a href="https://microformats.org/wiki/existing-rel-values#dropped">โต๊ะหล่น</a> และอย่าลงทะเบียน</strong> ค่าที่มีอยู่แล้ว หากคุณเชื่อว่าค่าที่เกี่ยวข้องถูกละทิ้งจากข้อกําหนดอื่นโดยไม่มีอคติ โปรดระบุลิงก์/อ้างอิงถึงข้อความ/การตัดสินใจที่ชัดเจนโดยระบุเช่นนั้น เช่น ค่าดังกล่าวเป็นเพียงการเลื่อนออกไป หรืออาจคาดว่าจะถูกแยกออกเป็นข้อกําหนดเฉพาะของตนเองจากกลุ่ม การพัฒนาข้อกําหนดนั้น</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>โปรดทราบว่ารายการใน&nbsp;<a href="https://microformats.org/wiki/existing-rel-values#formats">ตารางรูปแบบ</a>&nbsp;และรายการที่อยู่ใน HTML5 เป็นคําหลักในตัวก็ถือเป็นส่วนขยายที่มีสถานะ "ให้สัตยาบัน" เช่นกัน</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>โปรดตรวจสอบให้แน่ใจว่าการลงทะเบียนที่เพิ่มที่นี่มีข้อมูลที่จําเป็นทั้งหมดกรอกแล้ว&nbsp;<em>รวมทั้ง</em>:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>"ผลกระทบต่อการเชื่อมโยง"</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>"ผลกระทบต่อพื้นที่และพื้นที่" และ</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>ลิงก์ไปยังข้อมูลจําเพาะที่บันทึกคําหลัก <em>เป็น HTML <code>เรล</code> คําหลัก</em>● (ข้อกําหนดที่กําหนดเพียงรูปแบบไฟล์ของเป้าหมายลิงก์ แต่ไม่ได้กําหนด <code>เรล</code> keyword สําหรับใช้ในภาษา HTML ไม่ใช่สเปคแบบที่ต้องการในที่นี้)</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>รายการที่ไม่มีข้อมูลที่จําเป็นข้างต้นมีแนวโน้มที่จะถูกลบออก</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>การเปลี่ยนแปลงรีจิสทรีนี้จะไม่แสดงในตัวตรวจสอบแบบเรียลไทม์ แต่โดยทั่วไปผู้ตรวจสอบจะได้รับการอัปเดตโดยอัตโนมัติพร้อมการเปลี่ยนแปลงภายในหนึ่งสัปดาห์หรือประมาณนั้น</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>คําหลัก</th><th>ผลต่อ&nbsp;<code>ลิงค์</code></th><th>ผลต่อ&nbsp;<code>ก</code>,&nbsp;<code>พื้นที่</code></th><th>คําอธิบายสั้น ๆ</th><th>เชื่อมโยงไปยังข้อกําหนด</th><th>คําพ้องความหมาย</th><th>สถานะ</th></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-about&amp;action=edit&amp;redlink=1">เกี่ยวกับ</a></td><td>ไฮเปอร์ลิงค์</td><td>ไฮเปอร์ลิงค์</td><td>ทรัพยากรที่เชื่อมโยงกับมีข้อมูลเกี่ยวกับหน้าปัจจุบัน</td><td><a href="https://www.rfc-editor.org/rfc/rfc6903.html#section-2">RFC6903</a></td><td>มันอาจจะรวมกับ&nbsp;<a href="https://microformats.org/wiki/rel-me">เรล-มี</a>&nbsp;หรือ&nbsp;<a href="https://microformats.org/wiki/rel-author">ผู้เขียนซ้ํา</a>&nbsp;ในลิงก์ไปยังส่วน "เกี่ยวกับ" ที่เน้นไปที่ผู้เขียน</td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-amphtml&amp;action=edit&amp;redlink=1">แอมป์</a></td><td>ไฮเปอร์ลิงค์</td><td>ไฮเปอร์ลิงค์</td><td>ระบุเวอร์ชันอื่นของเอกสารที่เขียนด้วย AMP HTML</td><td><a href="https://github.com/ampproject/amphtml">เอกสาร AMP HTML</a></td><td>สามารถใช้ร่วมกับ rel=สํารองได้</td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-apple-touch-icon&amp;action=edit&amp;redlink=1">แอปเปิ้ล-สัมผัส-ไอคอน</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ระบุไอคอนหน้าเว็บสําหรับ “Web Clip” หรือ “touch icon” สําหรับอุปกรณ์มือถือ (ไม่จํากัดเฉพาะอุปกรณ์ Apple)</td><td><a href="http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/configuringwebapplications/configuringwebapplications.html">คู่มือเนื้อหาเว็บ Safari ของ Apple</a></td><td>อาจซ้ําซ้อนกับ rel=icon</td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-apple-touch-icon-precomposed&amp;action=edit&amp;redlink=1">apple-touch-icon-แต่งไว้ล่วงหน้า</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ระบุไอคอนหน้าเว็บสําหรับ “Web Clip” หรือ “touch icon” สําหรับอุปกรณ์มือถือ (ไม่จํากัดเฉพาะอุปกรณ์ Apple)</td><td><a href="http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/configuringwebapplications/configuringwebapplications.html">คู่มือเนื้อหาเว็บ Safari ของ Apple</a></td><td>อาจซ้ําซ้อนกับ rel=icon</td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-apple-touch-startup-image&amp;action=edit&amp;redlink=1">apple-สัมผัส-เริ่มต้น-รูปภาพ</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ระบุหน้าจอเริ่มต้นสําหรับเว็บแอปบน iOS Safari</td><td><a href="http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/configuringwebapplications/configuringwebapplications.html">คู่มือเนื้อหาเว็บ Safari ของ Apple</a></td><td>อาจซ้ําซ้อนกับ rel=icon พร้อมแอตทริบิวต์ขนาด?</td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-archived&amp;action=edit&amp;redlink=1">เก็บถาวรแล้ว</a></td><td>ทรัพยากรภายนอก</td><td>คําอธิบายประกอบไฮเปอร์ลิงก์</td><td>ทรัพยากรเป้าหมายจะถูกเก็บถาวรและเก็บไว้ส่วนใหญ่หรือเพื่อวัตถุประสงค์ทางประวัติศาสตร์เท่านั้น</td><td><a href="https://sitemorse.com/rel-archived/">rel="เก็บถาวร" คําอธิบาย</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-atproto&amp;action=edit&amp;redlink=1">แอตโปรโต</a></td><td>ความสัมพันธ์ภายนอก</td><td>ความสัมพันธ์ภายนอก</td><td>บ่งชี้ว่าลิงก์คือตัวจัดการบัญชี ATProto</td><td><a href="https://indieweb.org/rel-atproto">IndieWeb: ความสัมพันธ์</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/rel-attachment">สิ่งที่แนบมา</a></td><td>ไฮเปอร์ลิงค์</td><td>ไฮเปอร์ลิงค์</td><td>ทรัพยากรที่เชื่อมโยงกับ "แนบ" กับเอกสารนี้ คล้ายกับไฟล์แนบอีเมล ใช้ในเวิร์ดเพรส</td><td>ไม่มีข้อกําหนดอย่างเป็นทางการ</td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-authn&amp;action=edit&amp;redlink=1">รับรองความถูกต้อง</a></td><td>ความสัมพันธ์ภายนอก</td><td>ความสัมพันธ์ภายนอก</td><td>ใช้เฉพาะโปรไฟล์อ้างอิง (URL) เพื่อรับรองความถูกต้องของหน้า/ไซต์/ผู้ใช้ปัจจุบัน เช่น ผ่านทาง&nbsp;<a href="https://microformats.org/wiki/rel-me">เรล-มี</a></td><td><a href="https://indieweb.org/rel-authn">IndieWeb: rel-authn</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-authorization_endpoint&amp;action=edit&amp;redlink=1">การอนุญาต_จุดสิ้นสุด</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ระบุเซิร์ฟเวอร์การอนุญาตที่โฮสต์</td><td><a href="https://www.w3.org/TR/indieauth/">ข้อมูลจําเพาะของ IndieAuth</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/rel-canonical">ตามบัญญัติ</a></td><td>ไฮเปอร์ลิงค์</td><td>ไฮเปอร์ลิงค์</td><td>ระบุ URL ตามรูปแบบบัญญัติสําหรับเอกสารปัจจุบันเพื่อช่วยหลีกเลี่ยงเนื้อหาที่ซ้ํากัน</td><td><a href="http://en.wikipedia.org/wiki/Canonical_meta_tag">เมตาแท็ก Canonical</a>&nbsp;<a href="http://www.google.com/support/webmasters/bin/answer.py?answer=139066#2">Canonicalization ที่ Google Webmaster Central</a>&nbsp;<a href="http://www.bing.com/community/site_blogs/b/webmaster/archive/2009/02/12/partnering-to-help-solve-duplicate-content-issues.aspx">ไมโครซอฟต์ เว็บมาสเตอร์ เซ็นเตอร์</a>&nbsp;<a href="http://www.ysearchblog.com/2009/02/12/fighting-duplication-adding-more-arrows-to-your-quiver/">ยาฮู! ค้นหา บล็อก</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/rel-category">หมวดหมู่</a></td><td>ไฮเปอร์ลิงค์</td><td>ไฮเปอร์ลิงค์</td><td>หมายถึงหมวดหมู่ที่กําหนดให้กับเอกสารหรือโพสต์ปัจจุบัน ใช้งานโดย WordPress เพื่อระบุความสัมพันธ์ระหว่างบล็อกโพสต์และหมวดหมู่</td><td><a href="https://microformats.org/wiki/rel-category">rel-หมวดหมู่</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-code-repository&amp;action=edit&amp;redlink=1">พื้นที่เก็บข้อมูลโค้ด</a></td><td>ไฮเปอร์ลิงค์</td><td>ไฮเปอร์ลิงค์</td><td>ระบุตําแหน่งที่เก็บรหัส สําหรับลิงก์ ในกรณีเนื้อหาที่สร้างโดยเซิร์ฟเวอร์ จะระบุตําแหน่งของซอร์สโค้ดที่รับผิดชอบในการสร้างเพจปัจจุบันโดยเฉพาะ หรือในกรณีของไฟล์คงที่ ซึ่งสําเนาของเพจปัจจุบันถูกเก็บไว้) หากข้อมูล/เนื้อหาเฉพาะที่สร้างขึ้นที่หน้าถูกจัดเก็บแยกต่างหากจากตัวสร้าง (เช่นรหัสสําหรับ CMS เทียบกับตาราง SQL หรือไฟล์ข้อมูล JSON ของอินสแตนซ์ CMS เฉพาะ) นี่หมายถึงตัวสร้างและเท่านั้น&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-content-repository&amp;action=edit&amp;redlink=1">พื้นที่เก็บข้อมูล</a>&nbsp;ควรใช้เพื่อระบุตําแหน่งสําหรับการจัดเก็บเนื้อหา มิฉะนั้นจะถือว่าที่เก็บโค้ดรวมเนื้อหาด้วย ในขณะที่พื้นที่เก็บข้อมูลควรมีไฟล์ลิขสิทธิ์ของตัวเอง&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-code-license&amp;action=edit&amp;redlink=1">รหัสใบอนุญาต</a>&nbsp;rel-value ถูกเสนอเป็นตัวชี้โดยตรงไปยังใบอนุญาต (ดูเพิ่มเติม&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-content-license&amp;action=edit&amp;redlink=1">เนื้อหา-ใบอนุญาต</a>)</td><td></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-code-license&amp;action=edit&amp;redlink=1">รหัสใบอนุญาต</a></td><td>ไฮเปอร์ลิงค์</td><td>ไฮเปอร์ลิงค์</td><td>ระบุใบอนุญาตสําหรับรหัส (ข้อเสนอการแทนที่ที่กว้างขึ้นสําหรับ&nbsp;<a href="https://microformats.org/wiki/rel-jslicense">เจสไลเซนส์</a>) สําหรับลิงก์ ในกรณีเนื้อหาที่สร้างโดยเซิร์ฟเวอร์ จะระบุตําแหน่งของใบอนุญาตสําหรับซอร์สโค้ดทั้งหมดที่รับผิดชอบในการสร้างเพจปัจจุบัน หรือในกรณีของไฟล์คงที่ ตําแหน่งของใบอนุญาตสําหรับทั้งหมด ของไฟล์เหล่านี้) หากข้อมูล/เนื้อหาเฉพาะที่สร้างขึ้นที่หน้าถูกจัดเก็บแยกต่างหากจากตัวสร้าง (เช่นรหัสสําหรับ CMS เทียบกับตาราง SQL หรือไฟล์ข้อมูล JSON ของอินสแตนซ์ CMS เฉพาะ) นี่หมายถึงตัวสร้างและเท่านั้น&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-content-license&amp;action=edit&amp;redlink=1">เนื้อหา-ใบอนุญาต</a>&nbsp;ควรใช้เพื่อระบุใบอนุญาตสําหรับเนื้อหา มิฉะนั้น code-license ถือได้ว่าครอบคลุมใบอนุญาตของเนื้อหาด้วย การชี้ไปยังพื้นที่เก็บข้อมูลที่มีไฟล์โค้ดแบบคงที่หรือตัวสร้างควรทําด้วย&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-code-repository&amp;action=edit&amp;redlink=1">พื้นที่เก็บข้อมูลโค้ด</a>&nbsp;(และ&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-content-repository&amp;action=edit&amp;redlink=1">พื้นที่เก็บข้อมูล</a>&nbsp;สําหรับเนื้อหาใด ๆ ที่แยกต่างหาก)</td><td></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-component&amp;action=edit&amp;redlink=1">ส่วนประกอบ</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ระบุเอกสาร HTML ที่ถือเป็นส่วนประกอบของเอกสารนี้</td><td><a href="https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/components/index.html">ส่วนประกอบเว็บ</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/rel-chrome-webstore-item">chrome-เว็บสโตร์-รายการ</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ลิงก์แท็กเพื่อประกาศการติดตั้งอินไลน์ของแอปและส่วนขยายที่โฮสต์ใน Chrome Web Store</td><td><a href="https://developers.google.com/chrome/web-store/docs/inline_installation">การใช้การติดตั้งแบบอินไลน์</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-content-repository&amp;action=edit&amp;redlink=1">พื้นที่เก็บข้อมูล</a></td><td>ไฮเปอร์ลิงค์</td><td>ไฮเปอร์ลิงค์</td><td>ระบุเนื้อหาข้อมูลที่อยู่อาศัยของพื้นที่เก็บข้อมูล สําหรับลิงก์ จะระบุโดยเฉพาะในกรณีของเนื้อหาที่สร้างโดยเซิร์ฟเวอร์ ตําแหน่งที่ไฟล์ข้อมูลที่เก็บไว้แยกต่างหากซึ่งใช้ในการเติมหน้าปัจจุบันจะถูกจัดเก็บ (มิฉะนั้น "ที่เก็บโค้ด" ก็เพียงพอที่จะรวมเนื้อหาและโค้ด) หากข้อมูล/เนื้อหาเฉพาะที่สร้างขึ้นที่หน้าถูกจัดเก็บแยกต่างหากจากตัวสร้าง (เช่นรหัสสําหรับ CMS เทียบกับตาราง SQL ของอินสแตนซ์ CMS เฉพาะหรือไฟล์ข้อมูล JSON) นี่หมายถึงเฉพาะไฟล์ข้อมูล/เนื้อหาและ&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-code-repository&amp;action=edit&amp;redlink=1">พื้นที่เก็บข้อมูลโค้ด</a>&nbsp;ควรใช้เพื่อระบุตําแหน่งสําหรับการจัดเก็บไฟล์ต้นฉบับของเครื่องกําเนิดไฟฟ้า มิฉะนั้น,&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-code-repository&amp;action=edit&amp;redlink=1">พื้นที่เก็บข้อมูลโค้ด</a>&nbsp;ถือได้ว่ายังรวมทั้งเนื้อหาแทน ในขณะที่พื้นที่เก็บข้อมูลควรมีไฟล์ลิขสิทธิ์ของตัวเอง&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-content-license&amp;action=edit&amp;redlink=1">เนื้อหา-ใบอนุญาต</a>&nbsp;rel-value ถูกเสนอเป็นตัวชี้โดยตรงไปยังใบอนุญาต (ดูเพิ่มเติม&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-code-license&amp;action=edit&amp;redlink=1">รหัสใบอนุญาต</a>)</td><td></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-content-license&amp;action=edit&amp;redlink=1">เนื้อหา-ใบอนุญาต</a></td><td>ไฮเปอร์ลิงค์</td><td>ไฮเปอร์ลิงค์</td><td>ระบุใบอนุญาตสําหรับเนื้อหาข้อมูล สําหรับลิงก์ จะระบุโดยเฉพาะในกรณีของเนื้อหาที่สร้างโดยเซิร์ฟเวอร์ ตําแหน่งของใบอนุญาตสําหรับไฟล์ข้อมูลที่แยกไว้ทั้งหมดที่ใช้ในการเติมหน้าปัจจุบันจะถูกจัดเก็บไว้ (มิฉะนั้น "ใบอนุญาตโค้ด" ก็เพียงพอที่จะครอบคลุมใบอนุญาตของ เนื้อหาและรหัส)) หากข้อมูล/เนื้อหาเฉพาะที่สร้างขึ้นที่หน้าถูกจัดเก็บแยกต่างหากจากตัวสร้าง (เช่นรหัสสําหรับ CMS เทียบกับตาราง SQL ของอินสแตนซ์ CMS เฉพาะหรือไฟล์ข้อมูล JSON) นี่หมายถึงเฉพาะไฟล์ข้อมูล/เนื้อหาและ&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-code-license&amp;action=edit&amp;redlink=1">รหัสใบอนุญาต</a>&nbsp;ควรใช้เพื่อระบุใบอนุญาตสําหรับไฟล์ต้นฉบับของเครื่องกําเนิดไฟฟ้า มิฉะนั้น code-license ถือได้ว่าครอบคลุมใบอนุญาตของเนื้อหาด้วย การชี้ไปยังพื้นที่เก็บข้อมูลที่มีไฟล์ข้อมูลควรทําด้วย&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-content-repository&amp;action=edit&amp;redlink=1">พื้นที่เก็บข้อมูล</a>&nbsp;(และ&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-code-repository&amp;action=edit&amp;redlink=1">พื้นที่เก็บข้อมูลโค้ด</a>&nbsp;สําหรับไฟล์รหัสแบบคงที่หรือตัวสร้าง)</td><td></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.conformsTo</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>มาตรฐานที่กําหนดขึ้นซึ่งทรัพยากรที่อธิบายไว้สอดคล้องกัน<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td>อาจถูกแทนที่ด้วยค่าตามตัวอักษรในรูปแบบของ&nbsp;<code>&lt;meta name="DCTERMS.conformsTo" content="..." /&gt;</code></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.contributor</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>หน่วยงานที่รับผิดชอบในการบริจาคทรัพยากร ตัวอย่าง ได้แก่ บุคคล องค์กร หรือบริการ<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td>อาจถูกแทนที่ด้วยค่าตามตัวอักษรในรูปแบบของ&nbsp;<code>&lt;meta name="DCTERMS.contributor" content="..." /&gt;</code></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.ผู้สร้าง</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>หน่วยงานที่รับผิดชอบหลักในการสร้างทรัพยากร ตัวอย่าง ได้แก่ บุคคล องค์กร หรือบริการ<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td>อาจถูกแทนที่ด้วยค่าตามตัวอักษรในรูปแบบของ&nbsp;<code>&lt;meta name="DCTERMS.creator" content="..." /&gt;</code></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">คําอธิบาย DCTERMS</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>บัญชีของทรัพยากร คําอธิบายอาจรวมถึงแต่ไม่จํากัดเพียง: บทคัดย่อ สารบัญ การแสดงกราฟิก หรือบัญชีข้อความอิสระของทรัพยากร<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td>อาจถูกแทนที่ด้วยค่าตามตัวอักษรในรูปแบบของ&nbsp;<code>&lt;meta name="DCTERMS.description" content="..." /&gt;</code></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.hasFormat</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ทรัพยากรที่เกี่ยวข้องซึ่งเหมือนกันอย่างมากกับทรัพยากรที่อธิบายไว้ที่มีอยู่แล้ว แต่อยู่ในรูปแบบอื่น<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.hasPart</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ทรัพยากรที่เกี่ยวข้องซึ่งรวมอยู่ในทรัพยากรที่อธิบายไว้ทั้งทางกายภาพหรือทางตรรกะ<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.hasVersion</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ทรัพยากรที่เกี่ยวข้องซึ่งเป็นเวอร์ชัน ฉบับ หรือการดัดแปลงทรัพยากรที่อธิบายไว้<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.isรูปแบบOf</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ทรัพยากรที่เกี่ยวข้องซึ่งเหมือนกับทรัพยากรที่อธิบายไว้อย่างมาก แต่อยู่ในรูปแบบอื่น<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.isPartOf</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ทรัพยากรที่เกี่ยวข้องซึ่งมีการรวมทรัพยากรที่อธิบายไว้ทางกายภาพหรือทางตรรกะ<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.isอ้างอิงโดย</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ทรัพยากรที่เกี่ยวข้องซึ่งอ้างอิง อ้างอิง หรือชี้ไปที่ทรัพยากรที่อธิบายไว้<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.isReplacedBy</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ทรัพยากรที่เกี่ยวข้องซึ่งแทนที่ แทนที่ หรือแทนที่ทรัพยากรที่อธิบายไว้<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.isRequiredBy</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ทรัพยากรที่เกี่ยวข้องซึ่งต้องใช้ทรัพยากรที่อธิบายไว้เพื่อสนับสนุนการทํางาน การส่งมอบ หรือการเชื่อมโยงกัน<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.isเวอร์ชันของ</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>ทรัพยากรที่เกี่ยวข้องซึ่งทรัพยากรที่อธิบายไว้เป็นเวอร์ชัน ฉบับ หรือการดัดแปลง<br>การเปลี่ยนแปลงในเวอร์ชันบ่งบอกถึงการเปลี่ยนแปลงที่สําคัญในเนื้อหามากกว่าความแตกต่างในรูปแบบ<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.ใบอนุญาต</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>เอกสารทางกฎหมายที่อนุญาตอย่างเป็นทางการให้ดําเนินการบางอย่างกับทรัพยากร<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td>อาจถูกแทนที่ด้วยค่าตามตัวอักษรในรูปแบบของ&nbsp;<code>&lt;meta name="DCTERMS.license" content="..." /&gt;</code></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.สื่อกลาง</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>หน่วยงานที่เป็นสื่อกลางในการเข้าถึงทรัพยากรและผู้ที่ทรัพยากรนั้นมีวัตถุประสงค์หรือมีประโยชน์ ในบริบททางการศึกษา คนกลางอาจเป็นผู้ปกครอง ครู ผู้ช่วยสอน หรือผู้ดูแล<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td>อาจถูกแทนที่ด้วยค่าตามตัวอักษรในรูปแบบของ&nbsp;<code>&lt;meta name="DCTERMS.mediator" content="..." /&gt;</code></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.publisher</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>An entity responsible for making the resource available. Examples include a person, an organization, or a service.<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td>อาจถูกแทนที่ด้วยค่าตามตัวอักษรในรูปแบบของ&nbsp;<code>&lt;meta name="DCTERMS.publisher" content="..." /&gt;</code></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.references</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.relation</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>A related resource.<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.replaces</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>A related resource that is supplanted, displaced, or superseded by the described resource.<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.requires</a></td><td>ทรัพยากรภายนอก</td><td>ไม่อนุญาต</td><td>A related resource that is required by the described resource to support its function, delivery, or coherence.<br>ต้องการการประกาศเนมสเปซ Dublin Core:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">ข้อกําหนดข้อมูลเมตา DCMI</a></td><td></td><td>เสนอ</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.rightsHolder</a></td><td>External Resource</td><td>Not allowed</td><td>A person or organization owning or managing rights over the resource.<br>Requires Dublin Core namespace declaration:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">DCMI Metadata Terms</a></td><td>It may be replaced by the literal value in form of&nbsp;<code>&lt;meta name="DCTERMS.rightsHolder" content="..." /&gt;</code></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.source</a></td><td>External Resource</td><td>Not allowed</td><td>A related resource from which the described resource is derived.<br>Requires Dublin Core namespace declaration:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">DCMI Metadata Terms</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dcterms.(property)&amp;action=edit&amp;redlink=1">DCTERMS.subject</a></td><td>External Resource</td><td>Not allowed</td><td>The topic of the resource.<br>Requires Dublin Core namespace declaration:&nbsp;<code><strong>&lt;link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /&gt;</strong></code></td><td><a href="http://dublincore.org/documents/dcmi-terms/">DCMI Metadata Terms</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-disclosure&amp;action=edit&amp;redlink=1">disclosure</a></td><td>Not allowed</td><td>External Resource</td><td>The 'disclosure' Link Relation Type designates a list of patent disclosures or a particular patent disclosure itself made with respect to material for which such relation type is specified.</td><td><a href="http://tools.ietf.org/html/draft-yevstifeyev-disclosure-relation">The 'disclosure' Link Relation Type</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-discussion">discussion</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Refers to discussion of the current document or post.</td><td><a href="https://microformats.org/wiki/rel-discussion">rel-discussion</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-donation&amp;action=edit&amp;redlink=1">donation</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Indicates that the destination of the hyperlink provides a way to show or give support (e.g. financial) for the current page on a voluntary basis</td><td>No formal specification</td><td>Closely related to&nbsp;<a href="https://microformats.org/wiki/rel-payment">rel-payment</a></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-dns-prefetch&amp;action=edit&amp;redlink=1">dns-prefetch</a></td><td>External Resource</td><td>Not allowed</td><td>Tells the browser to perform dns lookup for host names ahead of use.</td><td><a href="https://developer.mozilla.org/En/Controlling_DNS_prefetching">Mozilla documentation</a>&nbsp;<a href="http://dev.chromium.org/developers/design-documents/dns-prefetching">Google documentation</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-edit">edit</a></td><td>External Resource</td><td>Hyperlink</td><td>Tells the browser the URL for editing the current page</td><td><a href="http://universaleditbutton.org/Registered_MIME_type#Alternate_Linking_Scheme">Universal Edit Button Alternate Linking Scheme</a>. Implemented in at least&nbsp;<a href="http://mediawiki.org/">MediaWiki</a>.</td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-edituri">EditURI</a></td><td>External Resource</td><td>Not allowed</td><td>A blogging auto discovery value, commonly used by WordPress</td><td><a href="http://bitworking.org/projects/atom/draft-gregorio-09.html#Edit">AtomAPI</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-enclosure">enclosure</a></td><td>External Resource</td><td>External Resource</td><td>Indicates that the referred resource is intended to be downloaded and cached.</td><td><a href="https://microformats.org/wiki/rel-enclosure">rel-enclosure</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-entry-content&amp;action=edit&amp;redlink=1">entry-content</a></td><td>Not allowed</td><td>External Resource</td><td>Indicates that the referenced document is an alternative display source for an Internet Explorer Web Slice.</td><td><a href="http://msdn.microsoft.com/en-us/library/cc304073(VS.85).aspx#_alternative">Web Slice format specification 0.9</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-external">external</a></td><td>Not allowed</td><td>Hyperlink</td><td>Indicates that the referenced document is not part of the same site as the current document.</td><td><a href="https://microformats.org/wiki/rel-external">rel-external</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-first&amp;action=edit&amp;redlink=1">first</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Indicates that the document is part of a sequence, and that the link is leading to the document that is the first logical document in the sequence.</td><td><a href="https://www.w3.org/TR/2011/WD-html5-20110113/links.html#link-type-first">W3C Working Draft 13 January 2011</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-gbfs&amp;action=edit&amp;redlink=1">gbfs</a></td><td>External Resource</td><td>Not allowed</td><td>The location of the gbfs auto-discovery file</td><td><a href="https://github.com/NABSA/gbfs/blob/master/gbfs.md">General Bikeshare Feed Specification</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-gtfs-static&amp;action=edit&amp;redlink=1">gtfs-static</a></td><td>External Resource</td><td>Not allowed</td><td>Indicates the associated GTFS Static file</td><td><a href="https://developers.google.com/transit/gtfs/reference">General Transit Feed Specification Reference</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-gtfs-realtime&amp;action=edit&amp;redlink=1">gtfs-realtime</a></td><td>External Resource</td><td>Not allowed</td><td>Indicates the associated GTFS-Realtime file</td><td><a href="https://developers.google.com/transit/gtfs-realtime/reference">GTFS-realtime Reference</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-home">home</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Refers to the top level document for the current document. It can be combined with 'alternate' to indicate a feed for the site of the current page.</td><td><a href="https://microformats.org/wiki/rel-home">rel-home</a></td><td><a href="https://microformats.org/wiki/index.php?title=rel-root&amp;action=edit&amp;redlink=1">rel-root</a></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-hub&amp;action=edit&amp;redlink=1">hub</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Refers to a hub that enables registration for notification of updates to the current page.</td><td><a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html#discovery">PubSubHubbub Spec</a>&nbsp;<a href="https://www.w3.org/TR/websub/">WebSub spec</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-import&amp;action=edit&amp;redlink=1">import</a></td><td>External Resource</td><td>Not allowed</td><td>HTML Imports are a way to include and reuse HTML documents in other HTML documents.</td><td><a href="http://www.w3.org/TR/html-imports">HTML Imports</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-in-reply-to">in-reply-to</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Refers to an original post that the current page is a comment on or reply to.</td><td><a href="https://microformats.org/wiki/rel-in-reply-to">rel-in-reply-to</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-root&amp;action=edit&amp;redlink=1">root</a></td><td>Hyperlink</td><td>Hyperlink</td><td>The target document is the root node of the hierarchical tree structure that hosts the current document</td><td>No formal specification</td><td><a href="https://microformats.org/wiki/rel-home">rel-home</a></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-index&amp;action=edit&amp;redlink=1">index</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Refers to a document providing a list of topics with pointers that pertain to the current document.</td><td><a href="http://www.w3.org/TR/html4/types.html#h-6.12">HTML4</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-issues">issues</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Refers to issues regarding the current document or specification.</td><td><a href="https://microformats.org/wiki/rel-discussion">rel-discussion</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-jslicense">jslicense</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Refers to a document with JavaScript source code and license information (also called a&nbsp;<a href="http://www.gnu.org/licenses/javascript-labels.html">JavaScript License Web Labels</a>&nbsp;page). We might want choose a keyword for this that is more general -- there are many situations besides JavaScript in which it is desirable or required by license agreements (e.g., GNU GPL) to make an offer of both the source code and a copy of a license when distributing object code versions of a given work.</td><td><a href="https://microformats.org/wiki/rel-jslicense">rel-jslicense</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-last&amp;action=edit&amp;redlink=1">last</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Indicates that the document is part of a sequence, and that the link is leading to the document that is the last logical document in the sequence.</td><td><a href="https://www.w3.org/TR/2011/WD-html5-20110113/links.html#link-type-last">W3C Working Draft 13 January 2011</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-lightbox&amp;action=edit&amp;redlink=1">lightbox</a></td><td>Not allowed</td><td>Img Pop-Up</td><td>Images with this attribute are displayed in a larger way than embedded in a website (or how you specified it) when clicked (e.g. with installed "Lightbox 2"-Plugin). When adding [group] to rel="lightbox" all images get a clickable button for next/prev; insert into&nbsp;<code>&lt;a rel="lightbox[group]"&gt;&lt;img src="http:example.com/img.jpg"&gt;&lt;/a&gt;</code></td><td><a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox 2</a>&nbsp;(needs actual specification to be kept in this list, this link is just documentation of one implementation)</td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-lightvideo&amp;action=edit&amp;redlink=1">lightvideo</a></td><td>Not allowed</td><td>Video Pop-Up</td><td>Loads the video in a lightbox effect</td><td><a href="https://www.drupal.org/node/252276">Lightbox2 - How to display video content</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-main&amp;action=edit&amp;redlink=1">main</a></td><td>Hyperlink</td><td>Hyperlink</td><td>The current page is a subsection or a less important page than the target resource</td><td>No formal specification</td><td>It can be a synonym of&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-parent&amp;action=edit&amp;redlink=1">rel-parent</a>&nbsp;when the latter refers to a document and not a person. It differs however from&nbsp;<a href="https://microformats.org/wiki/rel-home">rel-home</a>&nbsp;and&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-root&amp;action=edit&amp;redlink=1">rel-root</a>, as the latter refer only to the topmost resource in the hierarchical tree structure (and in this case they may be combined with&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-main&amp;action=edit&amp;redlink=1">main</a>). Note that&nbsp;<a href="https://microformats.org/wiki/index.php?title=rel-main&amp;action=edit&amp;redlink=1">rel-main</a>&nbsp;does not necessarily refer to a higher node in a tree structure, as the target resource can simply be a more important sibling node.</td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-manifest&amp;action=edit&amp;redlink=1">manifest</a></td><td>External Resource</td><td>Not allowed</td><td>Imports or links to a manifest</td><td><a href="http://w3c.github.io/manifest/#linking">W3C Manifest for web application</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-mask-icon&amp;action=edit&amp;redlink=1">mask-icon</a></td><td>External Resource</td><td>Not allowed</td><td>Specify a Webpage Icon for a “Pinned Tabs” on Safari 9.</td><td>probably redundant with rel-icon</td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-meta">meta</a></td><td>External Resource</td><td>Not allowed</td><td>External metadata about the HTML document</td><td><a href="http://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/#section-rdf-in-HTML">W3C's RDF/XML Syntax Specification</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-micropub&amp;action=edit&amp;redlink=1">micropub</a></td><td>External Resource</td><td>Not allowed</td><td>the micropub endpoint for creating new posts</td><td><a href="https://www.w3.org/TR/micropub/">Micropub scecification</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-noopener&amp;action=edit&amp;redlink=1">noopener</a></td><td>Not allowed</td><td>Annotation</td><td>Requires that any browsing context created by following the hyperlink must not have an opener browsing context.</td><td><a href="https://html.spec.whatwg.org/multipage/semantics.html#link-type-noopener">4.6.6.11 Link type ”noopener"</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-openid.delegate&amp;action=edit&amp;redlink=1">openid.delegate</a></td><td>External Resource</td><td>Not allowed</td><td>When the page that contains the link is used as an OpenID indentifier, the relying party perform sOpenID 1.1 authentication with the link target as the identifier instead.</td><td><a href="http://openid.net/specs/openid-authentication-1_1.html#delegating_authentication">OpenID Authentication 1.1</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-openid.server&amp;action=edit&amp;redlink=1">openid.server</a></td><td>External Resource</td><td>Not allowed</td><td>The OpenID server for the relying party to contact for OpenID 1.1 authentication</td><td><a href="http://openid.net/specs/openid-authentication-1_1.html#anchor4">OpenID Authentication 1.1</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-openid2.local_id&amp;action=edit&amp;redlink=1">openid2.local_id</a></td><td>External Resource</td><td>Not allowed</td><td>When the page that contains the link is used as an OpenID indentifier, the relying party perform sOpenID 2.0 authentication with the link target as the identifier instead.</td><td><a href="http://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3">OpenID Authentication 2.0</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-openid2.provider&amp;action=edit&amp;redlink=1">openid2.provider</a></td><td>External Resource</td><td>Not allowed</td><td>The OpenID server for the relying party to contact for OpenID 2.0 authentication</td><td><a href="http://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3">OpenID Authentication 2.0</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-p3pv1&amp;action=edit&amp;redlink=1">p3pv1</a></td><td>External Resource</td><td>Not allowed</td><td>References a machine-readable privacy policy description in the P3P format</td><td><a href="http://www.w3.org/TR/P3P/#syntax_link">P3P spec</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-pgpkey&amp;action=edit&amp;redlink=1">pgpkey</a></td><td>External Resource</td><td>Not allowed</td><td>Associates a PGP key with a Web page so that the Web page URL can be used as the commenter's URL in PGP-signed blog comments and the blogging system receiving the comment can fetch the key and verify the signature as belonging to the owner of the URL.</td><td><a href="http://golem.ph.utexas.edu/~distler/blog/archives/000320.html">PGP-Signed Comments</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-pingback&amp;action=edit&amp;redlink=1">pingback</a></td><td>External Resource</td><td>Not allowed</td><td>gives the address of the pingback server that handles pingbacks to the current document</td><td><a href="http://www.hixie.ch/specs/pingback/pingback">Pingback</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-preconnect&amp;action=edit&amp;redlink=1">preconnect</a></td><td>External Resource</td><td>Not allowed</td><td>Indicates an origin that will be used to fetch required resources. Initiating an early connection, which includes the DNS lookup, TCP handshake, and optional TLS negotiation, allows the user agent to mask the high costs of connection establishment latency.</td><td><a href="http://www.w3.org/TR/resource-hints/">Resource Hints Working Draft</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-prerender">prerender</a></td><td>External Resource</td><td>External Resource</td><td>Prerenders the Web page targeted by the link including running it scripts.</td><td><a href="https://microformats.org/wiki/rel-prerender">rel-prerender</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-profile">profile</a></td><td>External Resource</td><td>Contextual External Resource</td><td>indicate[s] that the destination of that hyperlink is a metadata profile (e.g. an&nbsp;<a href="https://microformats.org/wiki/XMDP">XMDP</a>&nbsp;profile) for the current page or portion thereof. See also&nbsp;<a href="https://microformats.org/wiki/xmdp-brainstorming">xmdp-brainstorming</a>.</td><td><a href="http://microformats.org/wiki/rel-profile">rel-profile</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-publisher&amp;action=edit&amp;redlink=1">publisher</a></td><td>External Resource</td><td>External Resource</td><td>Indicates that the referenced document is a metadata profile (e.g., a social-media/real-name profile such as a Google+ profile) for the publisher of the current page, or some portion of the current page.</td><td><a href="https://support.google.com/plus/answer/1713826?hl=en">Google help page</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-radioepg&amp;action=edit&amp;redlink=1">radioepg</a></td><td>External Resource</td><td>External Resource</td><td>Indicates that the referenced document is a RadioDNS Service Information document (ETSI TS 102 818 s10.2.3) containing information on the radio station that publishes the current page</td><td><a href="https://radiodns.org/developers/documentation">RadioDNS Documentation</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-rendition&amp;action=edit&amp;redlink=1">rendition</a></td><td>External Resource</td><td>External Resource</td><td>Indicates some example rendering, interpretation, or depiction of the source. User agents may choose to execute, display, or render the target in-place; or navigate to the target.</td><td><a href="http://www.globalmentor.com/specs/html-rel-rendition/">HTML rel rendition</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-reply-to">reply-to</a></td><td>External Resource</td><td>Hyperlink</td><td>indicates any mailbox(es) (i.e. email addresses) to which responses are to be sent.&nbsp;<em>Note: this is distinct from the 'in-reply-to' value which refers to the originating document, not to the address where comments should be sent.</em></td><td><a href="http://tools.ietf.org/html/rfc2822">RFC2822</a>&nbsp;(originally&nbsp;<a href="http://tools.ietf.org/html/rfc822#section-4.4.3">RFC822</a>)</td><td></td><td>ratified</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-schema.DCTERMS&amp;action=edit&amp;redlink=1">schema.DCTERMS</a></td><td>External Resource</td><td>Not allowed</td><td>Maps the prefix "DCTERMS" for use in other Dublin-Core related link relations (such as DCTERMS.creator) and meta keywords</td><td><a href="http://dublincore.org/documents/dc-html/#sect-4.2">Section 4.2 of "Expressing Dublin Core metadata using HTML/XHTML meta and link elements"</a></td><td>see also&nbsp;<a href="https://wiki.whatwg.org/wiki/MetaExtensions">"WhatWG MetaExtensions Wiki</a>&nbsp;for usage examples in meta keywords</td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-service&amp;action=edit&amp;redlink=1">service</a></td><td>External Resource</td><td>Not allowed</td><td>Atom Publishing Protocol editing service autodiscovery.</td><td><a href="http://wiki.whatwg.org/wiki/ServiceRelExtension">Documentation on the WHATWG wiki</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-shortlink">shortlink</a></td><td>External Resource</td><td>Not allowed</td><td>Specifies the preferred shortened URL for the page.</td><td><a href="http://code.google.com/p/shortlink/wiki/Specification">shortlink spec</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-sidebar">sidebar</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Indicates that the referenced document is intended to be shown in a secondary browsing context.</td><td><a href="https://microformats.org/wiki/rel-sidebar">rel-sidebar</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-sitemap">sitemap</a></td><td>External Resource</td><td>Not allowed</td><td>Provides a link to an XML document describing the layout of the site.</td><td><a href="https://microformats.org/wiki/rel-sitemap">rel-sitemap</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-subresource&amp;action=edit&amp;redlink=1">subresource</a></td><td>External Resource</td><td>Not allowed</td><td>An external resource intended for use within the current page.</td><td><a href="http://www.chromium.org/spdy/link-headers-and-server-hint/link-rel-subresource">Chromium documentation</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-sword&amp;action=edit&amp;redlink=1">sword</a></td><td>Hyperlink</td><td>Not allowed</td><td>SWORD is a lightweight protocol for remotely depositing content into repositories. .<a href="http://swordapp.org/">The SWORD project</a></td><td><a href="https://microformats.org/wiki/index.php?title=rel-sword&amp;action=edit&amp;redlink=1">rel-sword</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-syndication">syndication</a></td><td>Hyperlink</td><td>Hyperlink</td><td>Refers to a page which is a syndicated copy of the current page.</td><td><a href="https://microformats.org/wiki/rel-syndication">rel-syndication</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-timesheet&amp;action=edit&amp;redlink=1">timesheet</a></td><td>External Resource</td><td>Not allowed</td><td>Applies a timesheet to the document.</td><td><a href="http://www.w3.org/TR/timesheets/#smilTimesheetsNS-Elements-Timesheet">non-normative section in the Timesheet spec</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-token_endpoint&amp;action=edit&amp;redlink=1">token_endpoint</a></td><td>External Resource</td><td>Not allowed</td><td>Specify an HTTP endpoint that Micropub clients can use to obtain an access token given an authorization code</td><td><a href="https://www.w3.org/TR/indieauth/">IndieAuth spec</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/rel-webmention">webmention</a></td><td>External Resource</td><td>Hyperlink</td><td>gives the address of the webmention endpoint that handles webmentions to the current document</td><td><a href="https://www.w3.org/TR/webmention/">Webmention specification</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-widget&amp;action=edit&amp;redlink=1">widget</a></td><td>External Resource</td><td>External Resource</td><td>Autodiscovery for W3C widgets</td><td><a href="http://dev.w3.org/2006/waf/widgets/Overview.html#linking-to-a-widget-package-from-a-html-">non-normative section in the Widget packaging spec</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-wlwmanifest&amp;action=edit&amp;redlink=1">wlwmanifest</a></td><td>External Resource</td><td>Not allowed</td><td>Windows Live Writer manifest autodiscovery</td><td><a href="http://msdn.microsoft.com/en-us/library/bb463263.aspx">documentation on MSDN</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-image_src&amp;action=edit&amp;redlink=1">image_src</a></td><td>External Resource</td><td>Not allowed</td><td>Specify a Webpage Icon for use by Facebook, Yahoo, Digg, etc.</td><td>Unknown, but see for instance&nbsp;<a href="http://www.niallkennedy.com/blog/2009/03/enhanced-social-share.html">this</a></td><td>probably redundant with rel=icon</td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-cmis-acl&amp;action=edit&amp;redlink=1">http://docs.oasis-open.org/ns/cmis/link/200908/acl</a></td><td>External Resource</td><td>External Resource</td><td>Identifies the resource containing a CMIS ACL document for the link context</td><td><a href="http://docs.oasis-open.org/cmis/CMIS/v1.0/cs01/cmis-spec-v1.0.html#_Toc243905525">CMIS 1.0, Section 3.4.3.4</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-stylesheet/less&amp;action=edit&amp;redlink=1">stylesheet/less</a></td><td>External Resource</td><td>Not allowed</td><td>Less CSS framework stylesheets.</td><td><a href="http://lesscss.org/#-client-side-usage">Less CSS usage</a></td><td></td><td>proposed</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-yandex-tableau-widget&amp;action=edit&amp;redlink=1">yandex-tableau-widget</a></td><td>External Resource</td><td>Not allowed</td><td>Lets webmasters configure the appearance of their own site widgets in Yandex.Browser</td><td><a href="https://api.yandex.com/tableau/">Yandex's Tableau API</a></td><td></td><td>proposed</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">brainstorming</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Several rel values are being brainstormed as potential microformats and are thus listed here. If you find you have a use for such semantics in real world examples,&nbsp;<strong>consider trying out</strong>&nbsp;these values and provide feedback on the respective brainstorming page(s) with your results and experiences.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You may list new proposed rel values here, and even better if you can list and link to POSH uses in the wild.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>rel value</th><th>summary</th><th>brainstormed in and usage in the wild</th></tr><tr><td><a href="https://microformats.org/wiki/rel-accessibility">accessibility</a></td><td>indicate[s] that the destination of that hyperlink contains accessibility information for the current page.</td><td><a href="http://www.brucelawson.co.uk/2009/rel-accessibility/">blog post</a>&nbsp;which itself uses the rel value in a &lt;link&gt; tag in the head of the document.</td></tr><tr><td><a href="https://microformats.org/wiki/rel-author">author</a></td><td>indicate[s] that the destination of that hyperlink represents the author of the current page. Combines with&nbsp;<a href="https://microformats.org/wiki/rel-me">rel-me</a>&nbsp;to chain authorship information.</td><td>Google has said it will index rel-Author in this&nbsp;<a href="http://googlewebmastercentral.blogspot.com/2011/06/authorship-markup-and-web-search.html">blog post</a>, with further&nbsp;<a href="http://www.google.com/support/webmasters/bin/answer.py?answer=1229920">discussion of the rel-me connection</a>&nbsp;See also&nbsp;<a href="http://dev.w3.org/html5/spec/Overview.html#link-type-author">the HTML5 spec</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-bibliography&amp;action=edit&amp;redlink=1">bibliography</a></td><td>indicate[s] that the destination of that hyperlink is a bibliography for the current page.</td><td><a href="http://microformats.org/discuss/mail/microformats-discuss/2007-October/010863.html">mailing list post, 2007-10-15</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-cite&amp;action=edit&amp;redlink=1">cite</a></td><td>indicate[s] that the destination of that hyperlink is an authoritative source or a precedent to the current page.</td><td><a href="https://microformats.org/wiki/distributed-conversation-brainstorming">distributed-conversation-brainstorming</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-embed">embed</a></td><td>destination of the link is an version of the current page suitable for embedding in other pages</td><td><a href="https://indieweb.org/rel-embed">IndieWeb rel-embed examples and brainstorming</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-group">group</a></td><td>the referenced document represents a group to which the person represented by the current document belongs</td><td><a href="https://microformats.org/wiki/group-brainstorming">group-brainstorming</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-longdesc">longdesc</a></td><td>Alternative to the img longdesc attribute, for use on visible links</td><td><a href="http://www.google.com/search?q=rel%3D%22longdesc%22">Google search for rel=longdesc in the wild</a>&nbsp;shows many sources of proposals. Please edit this to list the earliest and perhaps most recent/comprehensive proposal. No known real world POSH usage in the wild yet.</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-map&amp;action=edit&amp;redlink=1">map</a></td><td>Link to a map. Possibly embedded within an adr, hCard, geo or hCalendar. Parsers&nbsp;<em>MAY</em>&nbsp;attempt to parse the URL if it is a link to a known map site (e.g. Geohash, Google Maps, Multimap) and extract co-ordinates and other useful data.</td><td>(to&nbsp;<a href="https://microformats.org/wiki/User:TobyInk">TobyInk</a>&nbsp;by email)</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-member&amp;action=edit&amp;redlink=1">member</a></td><td>the referenced document represents a member of the group represented by the current document</td><td><a href="https://microformats.org/wiki/group-brainstorming">group-brainstorming</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-m_PageScroll2id&amp;action=edit&amp;redlink=1">m_PageScroll2id</a></td><td>JS to scroll to a defined ID</td><td><a href="https://microformats.org/wiki/group-brainstorming">group-brainstorming</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-prefetch&amp;action=edit&amp;redlink=1">prefetch</a></td><td>indicates the URL and content-type of a resource that is likely to be a required resource when the next action or navigation is triggered. Initiating an early fetch allows the user agent to mask the request latency of the resource and make it available sooner to the application.</td><td><a href="https://igrigorik.github.io/resource-hints/#prefetch">resource hints draft</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-preload&amp;action=edit&amp;redlink=1">preload</a></td><td>indicates the URL and content-type of a resource that should be fetched as early as possible by the user agent. Initiating an early fetch allows the user agent to mask the request latency of the resource and make it available sooner to the application.</td><td><a href="https://igrigorik.github.io/resource-hints/#preload">resource hints draft</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-prerender">prerender</a></td><td>indicates the URL of the next navigation target. Initiating a prerender allows the user agent to deliver an instant navigation experience: the user agent downloads the top-level resource and its assets, and performs all of the processing steps required to show the page without actually showing it to the user.</td><td><a href="https://igrigorik.github.io/resource-hints/#prerender">resource hints draft</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-profile">profile</a></td><td>indicate[s] that the destination of that hyperlink is a metadata profile (e.g. an&nbsp;<a href="https://microformats.org/wiki/XMDP">XMDP</a>&nbsp;profile) for the current page or portion thereof</td><td><a href="https://microformats.org/wiki/xmdp-brainstorming">xmdp-brainstorming</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-shortlink">shortlink</a></td><td>the referenced document represents the current document but with a shorter URL</td><td><a href="http://samj.net/2009/04/introducing-relshort-better-alternative.html">blog post</a></td></tr><tr><td>source</td><td>the referenced document represents the source code for the current document or project</td><td><a href="https://microformats.org/wiki/source-brainstorming">source-brainstorming</a>&nbsp;<a href="http://adactio.com/journal/6667/">blog post</a></td></tr><tr><td>vcalendar-parent</td><td>link from an event to a containing event</td><td><a href="https://microformats.org/wiki/User:TobyInk/hcalendar-1.1">hCalendar 1.1 draft</a></td></tr><tr><td>vcalendar-child</td><td>link from an event to a contained event</td><td><a href="https://microformats.org/wiki/User:TobyInk/hcalendar-1.1">hCalendar 1.1 draft</a></td></tr><tr><td>vcalendar-sibling</td><td>link from an event to a related event with the same container</td><td><a href="https://microformats.org/wiki/User:TobyInk/hcalendar-1.1">hCalendar 1.1 draft</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-status&amp;action=edit&amp;redlink=1">status</a></td><td>the referenced document represents the status (or source of status updates) for the author of this document</td><td><a href="http://monkinetic.com/2009/11/24/status-autodiscovery-relstatus.html">blog post</a></td></tr><tr><td><a href="https://api.w.org/">https://api.w.org/</a></td><td>Link to Wordpress API</td><td><a href="https://wordpress.org/themes/twentysixteen/">Official Wordpress theme</a></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">more brainstorming</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>See also:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/genealogy-brainstorming">genealogy-brainstorming</a> for some thoughts on possible additional values for family relationships (use existing <a href="https://microformats.org/wiki/XFN">XFN</a> <a href="https://microformats.org/wiki/index.php?title=rel-parent&amp;action=edit&amp;redlink=1">parent</a>, <a href="https://microformats.org/wiki/index.php?title=rel-child&amp;action=edit&amp;redlink=1">child</a>, <a href="https://microformats.org/wiki/index.php?title=rel-sibling&amp;action=edit&amp;redlink=1">sibling</a>, <a href="https://microformats.org/wiki/index.php?title=rel-spouse&amp;action=edit&amp;redlink=1">spouse</a>, <a href="https://microformats.org/wiki/index.php?title=rel-kin&amp;action=edit&amp;redlink=1">kin</a> values first though)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/xpn-brainstorming">xpn-brainstorming</a> for some thoughts on possible additional values for professional relationships (use existing <a href="https://microformats.org/wiki/XFN">XFN</a> <a href="https://microformats.org/wiki/index.php?title=rel-co-worker&amp;action=edit&amp;redlink=1">co-worker</a>, <a href="https://microformats.org/wiki/index.php?title=rel-colleague&amp;action=edit&amp;redlink=1">colleague</a> values first though)</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">POSH usage</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>There are numerous rel values used as&nbsp;<a href="https://microformats.org/wiki/POSH">POSH</a>, both in the wild, whose origins are not necessarily known, nor are their meanings consistent. There are also numerous rel values from external proposals of varying degrees of merit. It is useful to document their existence and summarize their implied meanings/usage intent as research that may be used to perhaps take one or more of them thru the microformats&nbsp;<a href="https://microformats.org/wiki/process">process</a>&nbsp;if there is both sufficient interest and sufficient in the wild usage.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Note: If a value is missing from this table, it may have either already been promoted by writing it up as a proposal, or demoted by being explicitly dropped. Please check the other tables first before adding to this table.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Note: this list is incomplete, please help complete it from the following sources:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>External sources:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="http://developer.mozilla.org/about/meta">Meta Information in DevMo Docs</a> (DevMo)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://wiki.mozilla.org/Microsummaries">Microsummary</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://lachy.id.au/dev/markup/specs/wclr/">Web Communication Link Relationships</a> (WCLR)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://www.w3.org/MarkUp/Relationships.html">W3C Link Relationship values draft</a> (LRdraft) - from a draft of the HTML spec circa 1991.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/section-links.html#linkTypes">HTML5 draft</a> <strong>Liable to change</strong></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://wiki.foaf-project.org/Autodiscovery">FOAF Project Wiki: Autodiscovery</a> (FOAF)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://www.apps.ietf.org/rfc/rfc4685.html">RFC4685</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html">Google Blog</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>rel value</th><th>summary</th><th>origin</th><th>proposal(s)</th></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-archive&amp;action=edit&amp;redlink=1">archive</a></td><td>index of archived entries</td><td>unknown, perhaps Wordpress open source blogging software</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-archives&amp;action=edit&amp;redlink=1">archives</a></td><td>Provides a link to a collection of records, documents, or other materials of historical interest.</td><td></td><td>HTML5</td></tr><tr><td><a href="https://microformats.org/wiki/rel-author">author</a></td><td>see brainstorming above for suggested use by google</td><td>unknown</td><td>DevMo / HTML5</td></tr><tr><td><a href="https://microformats.org/wiki/rel-canonical">canonical</a></td><td>To help search engines disambiguate the same page with multiple representations</td><td>Google</td><td><a href="http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html">Google</a>/<a href="http://www.bing.com/community/blogs/webmaster/archive/2009/02/12/partnering-to-help-solve-duplicate-content-issues.aspx">Microsoft</a>/<a href="http://www.ysearchblog.com/2009/02/12/fighting-duplication-adding-more-arrows-to-your-quiver/">Yahoo!</a>,&nbsp;<a href="http://blog.ask.com/2009/02/ask-is-going-canonical.html">Ask Jeeves</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-comment&amp;action=edit&amp;redlink=1">comment</a></td><td>…</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-contribution&amp;action=edit&amp;redlink=1">contribution</a></td><td>…</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/rel-edituri">EditURI</a></td><td>Location of the xml-rpc gateway for a Wordpress install that allows external programs to add, edit and delete posts. Used by "<a href="http://codex.wordpress.org/Weblog_Client">WordPress blog client</a>" software for automating posting and updating blog content from your desktop.</td><td>Seen in&nbsp;<a href="http://www.wordpress.org/">WordPress</a>, e.g.&nbsp;<a href="http://www.tom-watson.co.uk/">[1]</a>.</td><td>Description stubbed in&nbsp;<a href="https://microformats.org/wiki/rel-edituri">rel-edituri</a>.</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-endorsed&amp;action=edit&amp;redlink=1">endorsed</a></td><td>…</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-fan&amp;action=edit&amp;redlink=1">fan</a></td><td>xxxx.</td><td>…</td><td><a href="https://microformats.org/wiki/hcard-user-profile-authoring">hcard-user-profile-authoring</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-feed">feed</a></td><td>Gives the address of a syndication feed for the current document.</td><td>…</td><td>WCLR/ HTML5</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-footnote&amp;action=edit&amp;redlink=1">footnote</a></td><td>Location of the footnote on a link to a footnote.</td><td>Markdown preprocessors such as&nbsp;<a href="http://maruku.rubyforge.org/">Maruku</a></td><td>HTML5</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-icon&amp;action=edit&amp;redlink=1">icon</a></td><td>Imports an icon to represent the current document. (Allowed in&nbsp;<code>link</code>&nbsp;only)</td><td><a href="http://dev.w3.org/html5/spec-LC/links.html#rel-icon">HTML5</a></td><td>WCLR/HTML5</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-kinetic-stylesheet&amp;action=edit&amp;redlink=1">kinetic-stylesheet</a></td><td>Imports a&nbsp;<a href="http://kssproject.org/">KSS</a>&nbsp;'kinetic stylesheet' to bind dynamic behavior to elements</td><td>Used in the&nbsp;<a href="http://plone.org/">Plone</a>&nbsp;Content Management System</td><td>…</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-lightbox&amp;action=edit&amp;redlink=1">lightbox</a></td><td>Hook - Indicates that following the link will trigger a "lightbox" script (Allowed in&nbsp;<code>link</code>&nbsp;only)</td><td>(<a href="http://www.google.co.uk/search?q=rel%3D%22lightbox%22">Google search for rel=lightbox in the wild</a>) Use "lightbox" instead of "clearbox" or "prettyPhoto"</td><td>…</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-made&amp;action=edit&amp;redlink=1">made</a></td><td>…</td><td>…</td><td>LRdraft</td></tr><tr><td><a href="https://microformats.org/wiki/rel-meta">meta</a></td><td>…</td><td><a href="http://www.w3.org/TR/1999/REC-rdf-syntax-19990222/#transport">1999 W3C RDF syntax REC</a></td><td>FOAF</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-microsummary&amp;action=edit&amp;redlink=1">microsummary</a></td><td>…</td><td>…</td><td><a href="http://wiki.mozilla.org/Microsummaries">Microsummary</a>, be aware of:&nbsp;<a href="https://microformats.org/wiki/page-summary-formats#Issues_2">microsummary issues</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-noreferrer&amp;action=edit&amp;redlink=1">noreferrer</a></td><td>indicates that no referrer information is to be leaked when following the link.</td><td><a href="http://dev.w3.org/html5/spec-LC/links.html#rel-noreferrer">HTML5</a></td><td>HTML5</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-openid-delegate&amp;action=edit&amp;redlink=1">openid.delegate</a></td><td>…</td><td>(<a href="http://www.google.co.uk/search?q=%22rel%3Dopenid%22">Google search for rel=openid.* in the wild</a>)</td><td>…</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-openid-server&amp;action=edit&amp;redlink=1">openid.server</a></td><td>…</td><td>(<a href="http://www.google.co.uk/search?q=%22rel%3Dopenid%22">Google search for rel=openid.* in the wild</a>)</td><td>…</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-permalink&amp;action=edit&amp;redlink=1">permalink</a></td><td>indicate a permanent link for some, or all, content within the document. obsolete; use&nbsp;<code>bookmark</code>&nbsp;instead.</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-pgpkey&amp;action=edit&amp;redlink=1">pgpkey</a></td><td>(see also rel-publickey)</td><td>…</td><td><a href="http://golem.ph.utexas.edu/~distler/blog/archives/000320.html">[2]</a>,&nbsp;<a href="http://golem.ph.utexas.edu/~distler/blog/archives/000325.html">[3]</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-pingback&amp;action=edit&amp;redlink=1">pingback</a></td><td>Gives the address of the pingback server that handles pingbacks to the current document. (Allowed in&nbsp;<code>link</code>&nbsp;only)</td><td>…</td><td>WCLR/ HTML5</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-popover&amp;action=edit&amp;redlink=1">popover</a></td><td>Used by a JS widget to display a large, descriptive tooltip.</td><td><a href="http://twitter.github.com/bootstrap">Twitter's Bootstrap</a>&nbsp;<a href="http://twitter.github.com/bootstrap/javascript.html#popovers">Popover.js</a></td><td>…</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-prefetch&amp;action=edit&amp;redlink=1">prefetch</a></td><td>Specifies that the target resource should be pre-emptively cached. (Allowed in&nbsp;<code>link</code>&nbsp;only)</td><td>…</td><td>HTML5</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-privacy&amp;action=edit&amp;redlink=1">privacy</a></td><td>Specifies that the target resource is the privacy policy.</td><td>…</td><td>…</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-publickey&amp;action=edit&amp;redlink=1">publickey</a></td><td>(see also rel-pgpkey)</td><td>…</td><td><a href="http://rasterweb.net/raster/2002/12/12/20021212072812/">[4]</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-referral&amp;action=edit&amp;redlink=1">referral</a></td><td>…</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-related&amp;action=edit&amp;redlink=1">related</a></td><td>…</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-replies&amp;action=edit&amp;redlink=1">replies</a></td><td>indicates a continued thread</td><td>unknown</td><td><a href="http://www.apps.ietf.org/rfc/rfc4685.html">RFC4685</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-respond-proxy&amp;action=edit&amp;redlink=1">respond-proxy</a></td><td>Working with respond.js - proxy on external server</td><td><a href="https://github.com/scottjehl/Respond">[5]</a></td><td><a href="https://github.com/scottjehl/Respond">[6]</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-respond-redirect&amp;action=edit&amp;redlink=1">respond-redirect</a></td><td>Working with respond.js - redirect location on local server</td><td><a href="https://github.com/scottjehl/Respond">[7]</a></td><td><a href="https://github.com/scottjehl/Respond">[8]</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-resource&amp;action=edit&amp;redlink=1">resource</a></td><td>…</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-search&amp;action=edit&amp;redlink=1">search</a></td><td>…</td><td>unknown</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/rel-sitemap">sitemap</a></td><td>Links to a site map document.</td><td>…</td><td><a href="http://www.sitemaps.org/">http://www.sitemaps.org/</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-sponsor&amp;action=edit&amp;redlink=1">sponsor</a></td><td>…</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-tooltip&amp;action=edit&amp;redlink=1">tooltip</a></td><td>Used by a JS widget to display a tooltip similar (though more customizable) to what is shown by browsers if the 'title' attribute is present.</td><td><a href="http://twitter.github.com/bootstrap">Twitter's Bootstrap</a>&nbsp;<a href="http://twitter.github.com/bootstrap/javascript.html#tooltips">Tooltip.js</a>&nbsp;(and likely other JS tools)</td><td>…</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-trackback&amp;action=edit&amp;redlink=1">trackback</a></td><td>…</td><td>unknown, perhaps open source Movable Type blogging software</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-unendorsed&amp;action=edit&amp;redlink=1">unendorsed</a></td><td>(probably redundant to&nbsp;<a href="https://microformats.org/wiki/rel-nofollow">nofollow</a>)</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-user&amp;action=edit&amp;redlink=1">user</a></td><td>…</td><td>…</td><td>WCLR</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-wlwmanifest&amp;action=edit&amp;redlink=1">wlwmanifest</a></td><td>Used by "<a href="http://explore.live.com/windows-live-writer">Windows Live Writer</a>," a Microsoft&nbsp;<a href="http://codex.wordpress.org/Weblog_Client">blog client</a>&nbsp;for automating posting and updating blog content from your desktop.</td><td>Seen in&nbsp;<a href="http://www.wordpress.org/">WordPress</a>, e.g.&nbsp;<a href="http://www.tom-watson.co.uk/">[9]</a>. Similar values are probably used by other blog content management systems as well.</td><td>…</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">WCLR</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The WCLR proposal is described by its author (in e-mail, 2007-09-25) as:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>…now effectively obsolete, since HTML5 and Microformats cover all the worthwhile relationships in that already.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>These are&nbsp;<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/section-links.html#linkTypes">covered by HTML5 already</a>:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>permalink -> bookmark</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>archive -> archives</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>feed</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>pingback</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>unendorsed -> nofollow</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>The rest now seem unnecessary.</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Nonetheless, there may be some mileage in using them in microformats, at least until HTML5 is widely available.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Dublin Core</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In the past, Dublin Core values have been added to this page in the table about HTML5 features, but no examples, nor an actual specification explicitly stating how the value(s) should be used in HTML could be found. The linked specifications below have been updated so we should start considering Dublin Core values accordingly.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>rel value</th><th>summary</th><th>source</th></tr><tr><td>schema.DC</td><td>a specification of all metadata terms maintained by the Dublin Core Metadata Initiative, with regard to the fifteen terms of the Dublin Core Metadata Element Set already published</td><td><a href="http://www.dublincore.org/documents/dcq-html/">Dublin Core</a></td></tr><tr><td>schema.DCTERMS</td><td>a specification of all metadata terms maintained by the Dublin Core Metadata Initiative, reflecting the changes described more fully in the 2012 document "Maintenance changes to DCMI Metadata Terms"&nbsp;<a href="http://dublincore.org/usage/decisions/2012/dcterms-changes/">[10]</a></td><td><a href="http://www.dublincore.org/documents/dcq-html/">Dublin Core</a></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p><strong>Issues need updating given new information from linked resources.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Notes:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Dublin Core. This search may help: <a href="http://www.google.co.uk/search?as_q=rel%3Dschema.*&amp;hl=en&amp;num=10&amp;btnG=Google+Search&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;lr=&amp;as_ft=i&amp;as_filetype=&amp;as_qdr=all&amp;as_occt=any&amp;as_dt=i&amp;as_sitesearch=http%3A%2F%2Fdublincore.org&amp;as_rights=&amp;safe=images">[11]</a>.<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>examples from that search only use invisible <code>&lt;link href></code> element</strong>. At first glance it appears the results from the search show only uses with the invisible <code>&lt;link href></code> element which is not ideal for content relationships. Content relationships should be user visible and thus uses with <code>&lt;a href></code> are strongly preferred.<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="http://www.ietf.org/rfc/rfc2731.txt">RFC2731</a> defines <code>rel="schema.AC"</code> and <code>rel="schema.RC"</code> with the pattern <code>rel="schema.PREFIX"</code> as a syntax for defining namespaces for use in meta[@name], *[@rel], *[@rev] and (as per eRDF) *[@class] attributes. A link to a Dublin Core metadata schema is generally not suitable for end users, so <code>&lt;link href></code> appears to be more appropriate than <code>&lt;a href></code> for those that use Dublin Core metadata schemas.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>The scheme proposed above provides metadata namespace declarations. As described by DCMI specifications, such indications <strong>cannot</strong> be provided w/o a suitable namespace. In order to give complete pieces of information, the correct description set must be: <code>&lt;link rel="schema.DCTERMS" href="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>"></code> (for the namespace declaration, followed by) <code>&lt;meta name="DCTERMS.[element]" content="[element.value]"></code> for related elements.<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Note: <a href="http://purl.org/dc/terms/">schema.DCTERMS</a> is conventionally related to an upgraded elements list than <a href="http://purl.org/dc/elements/1.1/">schema.DC</a> and should be preferred as rel values. Both are discussed here for subject completeness)</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>proposal to use in content currently only theoretical</strong>. Thus unfortunately the use of Dublin Core in user visible content like <code>&lt;a href></code> appears to be strictly theoretical. See <a href="http://microformats.org/discuss/mail/microformats-discuss/2008-January/011445.html">microformats-discuss/2008-January/011445.html</a> for a proposal to use Dublin Core in user visible content.<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>recent improvements</strong>. DCMI solves some trouble concerning metadata through the <em>description set model</em>. Some of these informations cannot currently be provided in any standard ways other than DC, namely dates, validity and periodicity. Following this public bug report (<a href="https://www.w3.org/Bugs/Public/show_bug.cgi?format=multiple&amp;id=22520">[12]</a>), the correct namespace declaration for DC and DCTERMS metadata are now considered valid HTML code. We <strong>must</strong> encourage this practice both for internal usefulness and for shared practices.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>The Dublin Core document <a href="http://dublincore.org/documents/dc-html/">"Expressing Dublin Core metadata using HTML/XHTML meta and link elements"</a> is a specification for, and gives examples of, both &lt;link rel="schema.DC" href="<a href="http://purl.org/dc/elements/1.1/">http://purl.org/dc/elements/1.1/</a>"> and &lt;link rel="schema.DCTERMS" href="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>">. Note that Dublin Core encourages the use of DCTERMS elements over DC. A list of projects which use Dublin Core metadata is maintained <a href="http://dublincore.org/projects/">here</a>.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://dublincore.org/documents/dc-html/">"Expressing Dublin Core metadata using HTML/XHTML meta and link elements"</a> also includes examples of , where [element] = subject, isReferencedBy, creator, and publisher. The  tag is used instead of the  tag whenever the content is a URL. (Note that this use is different from, but related to, .) Potentially, <em>any</em> of the 55 DCTERMS elements could be used in this way, and this could include use in HTML 5.<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>As said before, HTML5 validators now allow the use of <code>&lt;link rel="schema.DCTERMS" href="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>"></code> for namespace declarations.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>According to DCMI specification linked above, as well as <a href="http://dublincore.org/documents/dc-html/">"Expressing Dublin Core metadata using HTML/XHTML meta and link elements"</a> documentation, HTML5 @rel attribute proposed values table has been updated. It now includes a subset of DCMI <em>/terms/</em> namespace properties, more specifically those whose value can (or must) be logically expressed by a resource, so that the "href" attribute value becomes a non-literal value surrogate referring to the resource itself.<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Elements from <em>/elements/1.1/</em> namespace have not been included on purpose. According to <a href="http://wiki.dublincore.org/index.php/FAQ/DC_and_DCTERMS_Namespaces">"FAQ/DC and DCTERMS Namespaces"</a>, the old namespace is maintained for legacy purposes only and it is not as suitable for non-literal values as the ones denoted by <code>&lt;link></code> elements.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Use with HTTP Link Header</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You can also use any of the rel values (that are allowed for link elements) with HTTP Link Headers,</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Example: returning a Javascript file with a license (since JS itself has no way to indicate a license)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:preformatted -->
+<pre class="wp-block-preformatted">Link: &lt;http://creativecommons.org/publicdomain/zero/1.0/&gt;; rel="license"
+</pre>
+<!-- /wp:preformatted -->
+
+<!-- wp:paragraph -->
+<p>For multiple licenses (e.g. CC-SA and GPL), simply use multiple&nbsp;<code>Link:</code>&nbsp;headers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:preformatted -->
+<pre class="wp-block-preformatted">Link: &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;; rel="license"
+Link: &lt;http://www.gnu.org/licenses/gpl.html&gt;; rel="license"
+</pre>
+<!-- /wp:preformatted -->
+
+<!-- wp:paragraph -->
+<p>Example: similarly, linking to a copyright statement for an image:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:preformatted -->
+<pre class="wp-block-preformatted">Link: &lt;http://example.org/copyright.html&gt;; rel="copyright"
+</pre>
+<!-- /wp:preformatted -->
+
+<!-- wp:paragraph -->
+<p>or providing a brief inline copyright statement:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:preformatted -->
+<pre class="wp-block-preformatted">Link: &lt;data:text/plain;charset=utf-8,Copyright 2013 ExampleCo, All Rights Reserved.&gt;; rel="copyright"
+</pre>
+<!-- /wp:preformatted -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">unspecified</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Some rel values have been added to this page perhaps in one of the tables above, but no examples, nor an actual specification explicitly stating that the value(s) should be used in the HTML 'rel' attribute could be found. They are listed here in the hopes someone can discover more specific/precise URLs to examples or specifications about them (preferably both). Until such precise URLs to examples/specs are provided, the values can be treated as they are purely theoretical and thus of little interest.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A simple list here is sufficient.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">non HTML rel values</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>There are markup languages other than HTML that also have a rel attribute, often based upon the HTML rel attribute. It is useful to document some of these other languages and their rel values for both reference purposes, and to provide background research for the possible development and re-use of these values in HTML, as&nbsp;<a href="https://microformats.org/wiki/poshformats">poshformats</a>&nbsp;or&nbsp;<a href="https://microformats.org/wiki/microformats">microformats</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sources:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Atom">Atom</a> <a href="https://microformats.org/wiki/RFC4287">RFC4287</a> specification.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>See <a href="http://www.iana.org/assignments/link-relations.html">http://www.iana.org/assignments/link-relations.html</a> for more.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>See <a href="http://amundsen.com/media-types/maze/format/#link-relations">Maze+XML</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>See <a href="http://amundsen.com/media-types/collection/format/#link-relations">Collection+JSON</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>See <a href="http://www.opensearch.org/Specifications/OpenSearch/1.1#Url_rel_values">OpenSearch</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>See <a href="http://tools.ietf.org/html/rfc6861">The Create-Form and Edit-Form Link Relations (RFC6861)</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>See <a href="http://rels.messages.io/">Workflow-Related Link Relations at Messages.io</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>rel value</th><th>summary<br>(from the relevant specification where possible))</th><th>defining specification</th></tr><tr><td>self</td><td>From&nbsp;<a href="http://www.ietf.org/rfc/rfc4287.txt">http://www.ietf.org/rfc/rfc4287.txt</a>&nbsp;:The value "self" signifies that the IRI in the value of the href attribute identifies a resource equivalent to the containing element.</td><td><a href="https://microformats.org/wiki/Atom">Atom</a>&nbsp;<a href="http://www.ietf.org/rfc/rfc4287.txt">http://www.ietf.org/rfc/rfc4287.txt</a></td></tr><tr><td><a href="http://gdata.youtube.com/schemas/2007#in-reply-to">http://gdata.youtube.com/schemas/2007#in-reply-to</a></td><td>See&nbsp;<a href="http://code.google.com/apis/youtube/2.0/developers_guide_protocol_comments.html">http://code.google.com/apis/youtube/2.0/developers_guide_protocol_comments.html</a></td><td>YouTube extension to Atom</td></tr><tr><td>collection</td><td>Refers to a resource which represents a collection of which the current resource is a member.When used in the Maze+XML media type, the associated URI returns the available collection of mazes.</td><td>Maze+XML, Collection+JSON, OpenSearch</td></tr><tr><td>compensatingtx</td><td>Link to a resource representing information about a compensating transaction for each member transaction of a&nbsp;<a href="http://www.cs.cornell.edu/andru/cs711/2002fa/reading/sagas.pdf">Long-Lived Compensating Transaction</a></td><td>See&nbsp;<a href="http://rels.messages.io/#compensatingtx">Compensating Transaction Link Relation</a></td></tr><tr><td>east</td><td>Refers to a resource to the "east" of the current resource.When used in the Maze+XML media type, the associated URI points to a neighboring cell resource to the east in the active maze.</td><td>Maze+XML</td></tr><tr><td>events</td><td>Link to a collection resource representing a list of subscribe-able events.</td><td>See&nbsp;<a href="http://rels.messages.io/#events">Events Link Relation</a></td></tr><tr><td>exit</td><td>Refers to a resource that represents the exit or end of the current client actvity or process.When used in the Maze+XML media type, the associated URI points to the final exit resource of the active maze.</td><td>Maze+XML</td></tr><tr><td>north</td><td>Refers to a resource that is "north" of the current resource.When used in the Maze+XML media type, the associated URI points to a neighboring cell resource to the north in the active maze.</td><td>Maze+XML</td></tr><tr><td>south</td><td>Refers to a resource that is "south" of the current resource.When used in the Maze+XML media type, the associated URI points to a neighboring cell resource to the south in the active maze.</td><td>Maze+XML</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-via&amp;action=edit&amp;redlink=1">via</a></td><td>Identifies a resource that is the source of the information in the context.</td><td>Atom 1.0 Syndication format (RFC 4287)</td></tr><tr><td>west</td><td>Refers to a resource that is "west" of the current resource.When used in the Maze+XML media type, the associated URI points to a neighboring cell resource to the west in the active maze.</td><td>Maze+XML</td></tr><tr><td>item</td><td>The target IRI points to a resource that is a member of a collection represented by the context IRI.</td><td>Collection+JSON</td></tr><tr><td>create-form</td><td>When included in a resource, the "create-form" link relation MAY identify a target resource that represents the form to append a new member to the link context.</td><td>See&nbsp;<a href="http://tools.ietf.org/html/rfc6861">The Create-Form and Edit-Form Link Relations (RFC6861)</a></td></tr><tr><td>edit-form</td><td>When included in a resource, the "edit-form" link relation identifies a target resource that represents the form for editing associated resource.</td><td>See&nbsp;<a href="http://tools.ietf.org/html/rfc6861">The Create-Form and Edit-Form Link Relations (RFC6861)</a></td></tr><tr><td>lightframe</td><td>Opens the target in a lightbox. On inclusion it provides a simple target the lightframe and loads the content in a lightbox effect</td><td>Lightbox</td></tr><tr><td>superbox[image]</td><td>jQuery Superbox! is a script which allows you display windows with the lightbox effect.</td><td>superbox</td></tr><tr><td>wp-video-lightbox</td><td>wp-video-lightbox! is a rel to anchor tag script display videos with the lightbox effect.</td><td>wp-video-lightbox</td></tr><tr><td>youtube</td><td>Opens the target youtube video in using the Swipebox Plugin</td><td>Swipebox</td></tr><tr><td>shadowbox</td><td>shadowbox is a jQuery script for images displaying with the "lightbox" effects.</td><td>shadowbox</td></tr><tr><td>permission</td><td>When included in a resource, the "permission" link relation MAY identify a target resource that represents the list of entities that can access or modify the resource in the link context.</td><td>See&nbsp;<a href="http://cdoc.io/spec.html#permission-link-relation">Collection Document Media Type Specification</a></td></tr><tr><td>sub</td><td>When included in a resource representation of an event, the "sub" (subscription) link relation MAY identify a target resource that represents the ability to subscribe to the pub/sub event-type resource in the link context.</td><td>See&nbsp;<a href="http://rels.messages.io/#sub">Subscription Link Relation</a></td></tr><tr><td>unsub</td><td>When included in a resource representation of an event, the "unsub" (subscription cancellation) link relation MAY identify a target resource that represents the ability to un-subscribe from the pub/sub event-type resource in the link context.</td><td>See&nbsp;<a href="http://rels.messages.io/#unsub">Subscription Cancellation Link Relation</a></td></tr><tr><td>version-history</td><td>When included on a versioned resource, this link points to a resource containing the version history for this resource.</td><td><a href="http://tools.ietf.org/html/rfc5829">RFC 5829</a></td></tr><tr><td>latest-version</td><td>When included on a versioned resource, this link points to a resource containing the latest (e.g., current) version.</td><td><a href="http://tools.ietf.org/html/rfc5829">RFC 5829</a></td></tr><tr><td>working-copy</td><td>When included on a versioned resource, this link points to a working copy for this resource.</td><td><a href="http://tools.ietf.org/html/rfc5829">RFC 5829</a></td></tr><tr><td>working-copy-of</td><td>When included on a working copy, this link points to the versioned resource from which this working copy was obtained.</td><td><a href="http://tools.ietf.org/html/rfc5829">RFC 5829</a></td></tr><tr><td>predecessor-version</td><td>When included on a versioned resource, this link points to a resource containing the predecessor version in the version history.</td><td><a href="http://tools.ietf.org/html/rfc5829">RFC 5829</a></td></tr><tr><td>successor-version</td><td>When included on a versioned resource, this link points to a resource containing the successor version in the version history.</td><td><a href="http://tools.ietf.org/html/rfc5829">RFC 5829</a></td></tr><tr><td>...</td><td>...</td><td>...</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">dropped</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The following rel values were in earlier version(s) of specification(s) and it is presumed by their absence from the most recent version of the respective specification(s) that they have been deprecated or obsoleted.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In general, you&nbsp;<em>SHOULD NOT</em>&nbsp;use any dropped values.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If any such values have been superceded by standard values (see the first table on this page), then you&nbsp;<em>MUST NOT</em>&nbsp;use the dropped versions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In particular:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>if a rel value was in a draft and is missing (without explanation) from the final spec, or</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>if a rel value was in a previous version of and is missing (without explanation) from an update to the specification (even a draft update)</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Then absent any other information or explanation, it is presumed that the group/editors working on that specification decided to explicitly drop it (either in development, or in the updated version) and thus it should be obsoleted (not re-registered).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If you wish to add them, please research&nbsp;<em>why</em>&nbsp;such values were omitted from latter specifications before doing so. If you do discover the reasoning, please add a short statement or link to thereof into the appropriate place in the following table.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If there is more data, e.g. a link to an email of discussion of the spec development that explains&nbsp;<em>why</em>&nbsp;the rel value was dropped, and it explicitly states, e.g. it was without prejudice, or merely post-poned, or perhaps expected to be spun-out into its spec (or some other explicit positive reason), then it makes to link/cite that explicit text as part of a proposal.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sources:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="http://www.w3.org/MarkUp/html3/">HTML3</a> (HTML3) / has been superceded by <a href="http://www.w3.org/MarkUp/Wilbur/">HTML 3.2</a> - which itself has been superceded by <a href="http://www.w3.org/TR/REC-html40">HTML 4.0</a> - which itself has been updated by <a href="http://w3.org/TR/html401">HTML 4.01</a>, commonly referred to as "HTML 4" in this wiki and other places.)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="http://www.w3.org/TR/relations.html">Proposed HTML 4.0 link types</a> (HTML4dropped) - obsoleted/superceded by the HTML 4.0 Recommendation. Any values that were in the "Proposed HTML 4.0 link types" document but didn't make it into the HTML 4.0 Recommendation were thus explicitly dropped and should be avoided.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>rel value</th><th>summary</th><th>defining specification</th><th>why dropped</th></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-banner&amp;action=edit&amp;redlink=1">banner</a></td><td>Was used to reference another document to be used as banner for this document (i.e. a form of "include" statement).</td><td>HTML3</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-begin&amp;action=edit&amp;redlink=1">begin</a></td><td>identifies the author-defined start of a sequence of documents of which the current document is a node.</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-biblioentry&amp;action=edit&amp;redlink=1">biblioentry</a></td><td>identifies a bibliographic entry</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-bibliography&amp;action=edit&amp;redlink=1">bibliography</a></td><td>identifies a bibliography</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-child&amp;action=edit&amp;redlink=1">child</a>&nbsp;(obsolete/superceded)</td><td>the target document is a hierarchical child, or subdocument, of the current document</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-citation&amp;action=edit&amp;redlink=1">citation</a></td><td>the target is a bibliographic citation</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-collection&amp;action=edit&amp;redlink=1">collection</a></td><td>the target document is an collection that contains the current document</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-definition&amp;action=edit&amp;redlink=1">definition</a></td><td>identifies a definition of a term</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-disclaimer&amp;action=edit&amp;redlink=1">disclaimer</a></td><td>identifies a hypertext link to a legal disclaimer</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-editor&amp;action=edit&amp;redlink=1">editor</a></td><td>identifies a hypertext link to an editor</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-end&amp;action=edit&amp;redlink=1">end</a></td><td>identifies the author-defined end of a sequence of documents of which the current document is a node.</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-footnote&amp;action=edit&amp;redlink=1">footnote</a></td><td>the anchor is a footnote marker and the target is a footnote</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-navigate&amp;action=edit&amp;redlink=1">navigate</a></td><td>the target document contains information such as a image map that will help users to gain a sense of how and where to found information</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-origin&amp;action=edit&amp;redlink=1">origin</a></td><td>synonym for&nbsp;<code>top</code></td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-parent&amp;action=edit&amp;redlink=1">parent</a>&nbsp;(obsolete/superceded)</td><td>the target document is the hierarchical parent, or container, of the current document</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-pointer&amp;action=edit&amp;redlink=1">pointer</a></td><td>the target is a pointer to the real target. This value can be used by a user agent to perform a pre-fetch of the specified target for evaluation until the real target is reached</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-publisher&amp;action=edit&amp;redlink=1">publisher</a></td><td>identifies a hypertext link to a publisher</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-sibling&amp;action=edit&amp;redlink=1">sibling</a>&nbsp;(obsolete/superceded)</td><td>the target document is a child of a common parent, or a hierarchical peer of the current document</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-top&amp;action=edit&amp;redlink=1">top</a></td><td>the target document is the logical top node of the tree (see also&nbsp;<code>begin</code>)</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-trademark&amp;action=edit&amp;redlink=1">trademark</a></td><td>identifies a hypertext link to a trademark notice</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-translation&amp;action=edit&amp;redlink=1">translation</a></td><td>the target is a translation to another language</td><td>HTML4dropped</td><td>unknown</td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-urc&amp;action=edit&amp;redlink=1">urc</a></td><td>identifies a Universal Resource Citation</td><td>HTML4dropped</td><td>unknown</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">dropped without prejudice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In one known instance (from HTML4 to HTML5), some rel values were in an earlier version of a specification (or a proposal) and were dropped from a latter (draft) version, and it was noted that these values were dropped with the intent that they could still be proposed in a registry and thus they explicitly were not deprecated or obsoleted. This section documents such values as separate from the&nbsp;<a href="https://microformats.org/wiki/existing-rel-values#dropped">dropped</a>&nbsp;section.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In general, you&nbsp;<em>SHOULD NOT</em>&nbsp;use any dropped values.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If any such values have been superceded by standard values (see the first table on this page), then you&nbsp;<em>MUST NOT</em>&nbsp;use the dropped versions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Rel values that were dropped without prejudice from a specification will be considered similar to new values that have never been specified.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If you know of additional rel values that were dropped without prejudice from an update to a specification, please cite a URL and quote from the group developing the specification that officially states from that group that the dropping of the values was done without prejudice, or equivalent statement (such as explicit allowance of external registration, proposal, and/or development).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This table serves a historical purpose. If you wish to propose a value from this table, please copy it and leave it in place.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sources:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Several rel values were <a href="http://www.w3.org/Bugs/Public/show_bug.cgi?id=7475#c15">explicitly dropped from HTML5</a>. Per: <a href="http://lists.w3.org/Archives/Public/public-html/2011Feb/att-0481/issue-118-decision.html">Issue 118 Decision</a> (<strong>emphasis</strong> added):"The final proposal argues for the removal of some relation values, to wit, it suggests removal of <strong>index, up, first and last</strong>. It was pointed out in survey comments that these relations are already registered in the IANA link relation registry. Presumably, <strong>these relations could also be entered in whatever other registry or registries HTML5 adopts for this purpose</strong>...."Next Steps..."Since the relations to be removed are already registered at the IANA link relation registry, no further action is needed to include them there. WG members are <strong>free to register or record these relations elsehwere</strong> [sic], as well."</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>rel value</th><th>summary</th><th>defining specification</th><th>why dropped</th></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-first&amp;action=edit&amp;redlink=1">first</a></td><td>Synonym for&nbsp;<code>start</code></td><td>HTML4dropped - never in an official spec</td><td><a href="http://lists.w3.org/Archives/Public/public-html/2011Feb/att-0481/issue-118-decision.html">Explicitly dropped from HTML5 interim draft yet permitted for external registry</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-index&amp;action=edit&amp;redlink=1">index</a></td><td>Refers to a document providing an index for the current document.</td><td>was in&nbsp;<a href="http://www.w3.org/TR/html4/types.html#h-6.12">HTML4</a>; the token has been re-registered within the&nbsp;<a href="https://microformats.org/wiki/existing-rel-values#HTML5_link_type_extensions">HTML5 link type extensions</a>&nbsp;and is now valid.</td><td><a href="http://lists.w3.org/Archives/Public/public-html/2011Feb/att-0481/issue-118-decision.html">Explicitly dropped from HTML5 interim draft yet permitted for external registry</a></td></tr><tr><td><a href="https://microformats.org/wiki/index.php?title=rel-last&amp;action=edit&amp;redlink=1">last</a></td><td>Refers to the last document in a collection of documents.</td><td>HTML4dropped - never in an official spec</td><td><a href="http://lists.w3.org/Archives/Public/public-html/2011Feb/att-0481/issue-118-decision.html">Explicitly dropped from HTML5 interim draft yet permitted for external registry</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-up">up</a></td><td>When the document forms part of a hierarchy, this link references the immediate parent of the current document. Synonym for&nbsp;<code>parent</code>.</td><td>was in&nbsp;<a href="http://www.w3.org/MarkUp/html3/dochead.html">HTML3</a>&nbsp;- but&nbsp;<a href="http://www.w3.org/TR/html401/types.html#type-links">dropped in HTML4</a></td><td><a href="http://lists.w3.org/Archives/Public/public-html/2011Feb/att-0481/issue-118-decision.html">Explicitly dropped from HTML5 interim draft yet permitted for external registry</a></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>See related&nbsp;<a href="http://dev.w3.org/html5/spec/links.html#linkTypes">HTML5: Link types</a>&nbsp;for existing HTML5 specified rel values.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">rejected</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Some rel values have been proposed and rejected. They are listed here to make that explicit. Authors&nbsp;<em>MUST NOT</em>&nbsp;use rejected rel values.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Source:&nbsp;<a href="https://microformats.org/wiki/rejected-formats">rejected-formats</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>rel value</th><th>origin / proposal</th><th>why rejected</th></tr><tr><td><a href="https://microformats.org/wiki/rel-logo">logo</a></td><td><a href="http://relogo.org/">Relogo.org</a></td><td><a href="https://microformats.org/wiki/rejected-formats#Logo">rejected-formats#Logo</a></td></tr><tr><td><a href="https://microformats.org/wiki/rel-pavatar">pavatar</a></td><td><a href="http://pavatar.com/">pavatar</a></td><td><a href="https://microformats.org/wiki/rejected-formats#Pavatar">rejected-formats#Pavatar</a></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">tools</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>See&nbsp;<a href="https://microformats.org/wiki/implementations">implementations</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">addtional external research</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Here are some additional historical references to the development or rel-values which may be useful when researching values, especially why specific values may have been proposed but abandoned.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>1996-06-07 <a href="http://www.w3.org/MarkUp/draft-ietf-html-relrev-00.txt">Hypertext links in HTML</a> (copies: <a href="http://ftp.ics.uci.edu/pub/ietf/html/draft-ietf-html-relrev-00.txt">ftp.ics.uci.edu</a>)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>1996-11-13 <a href="http://www.w3.org/Architecture/NOTE-link">Describing and Linking Web Resources</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>1997-01-23 <a href="http://lists.gnu.org/archive/html/lynx-dev/1997-01/msg00537.html">LYNX-DEV Lynx and the LINK tag</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>1997-01-24 <a href="http://lists.w3.org/Archives/Public/w3c-sgml-wg/1997Jan/0357.html">Taxonomy list</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>1997-03-28 <a href="http://www.w3.org/TR/WD-htmllink-970328">W3C Working Draft: Hypertext Links and Meta Information in HTML</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">previous attempts at documenting</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>There have been previous attempts at documenting known rel values, most of which fell out of date due to being dependent on a single author maintaining them. They're listed here purely for historical reasons, and are not sufficient to be references of their own (since they're just individual curations of other references)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="http://fantasai.tripod.com/qref/Appendix/LinkTypes/ltdef.html">Link Type Definitions Glossary</a> by fantasai</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>...</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">related</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/rel">rel</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a>existing rel values</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/rel-examples">rel examples</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/rel-faq">rel FAQ</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/rel-design-pattern">rel design pattern</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/rel-values-issues">rel values issues</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/rel-registry">rel-registry</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/elemental-microformats">elemental-microformats</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rev-values">existing-rev-values</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-class-names">existing-class-names</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">copyright</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a href="http://creativecommons.org/licenses/publicdomain/"><img src="http://creativecommons.org/images/public/norights-a.gif" alt="norights-a.gif"></a>All text of this page is available under the terms of the&nbsp;<a href="http://creativecommons.org/licenses/publicdomain/">Creative Commons Public Domain License</a>. (See&nbsp;<a href="http://microformats.org/wiki/Microformats:Copyrights">Copyrights</a>&nbsp;for details.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Navigation menu</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/index.php?title=Special:UserLogin&amp;returnto=existing-rel-values">เข้าสู่ระบบ</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values">หน้า</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/index.php?title=Talk:existing-rel-values&amp;action=edit&amp;redlink=1">การอภิปราย</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/existing-rel-values">อ่าน</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/index.php?title=existing-rel-values&amp;action=edit">ดูแหล่งที่มา</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/index.php?title=existing-rel-values&amp;action=history">ดูประวัติ</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">ค้นหา</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a href="https://microformats.org/wiki/Main_Page"></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Main_Page">หน้าแรก</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Special:RecentChanges">การเปลี่ยนแปลงล่าสุด</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>ไมโครฟอร์แมต</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="http://microformats.org/">บล็อก</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Microformats_Wiki:Current_events">เหตุการณ์ที่เกิดขึ้น</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/About">เกี่ยวกับ</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>เครื่องมือ</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Special:WhatLinksHere/existing-rel-values">ลิงค์อะไรที่นี่</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Special:RecentChangesLinked/existing-rel-values">การเปลี่ยนแปลงที่เกี่ยวข้อง</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Special:SpecialPages">หน้าพิเศษ</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="javascript:print();">รุ่นที่พิมพ์ได้</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/index.php?title=existing-rel-values&amp;oldid=70842">ลิงค์ถาวร</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/index.php?title=existing-rel-values&amp;action=info">ข้อมูลหน้า</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list {"anchor":"footer-info"} -->
+<ul id="footer-info" class="wp-block-list"><!-- wp:list-item -->
+<li>This page was last edited on 12 October 2025, at 21:32.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list {"anchor":"footer-places"} -->
+<ul id="footer-places" class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Microformats_Wiki:Privacy_policy">Privacy policy</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Microformats_Wiki:About">About Microformats Wiki</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://microformats.org/wiki/Microformats_Wiki:General_disclaimer">Disclaimers</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.mediawiki.org/"><img srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" src="https://microformats.org/wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
